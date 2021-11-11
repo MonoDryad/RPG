@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>RPG Linear</title>
+    <title>RPG</title>
 </head>
 <body>
     <header>
         <img src="./imagens/Logo.png" alt="Dungeons & Dragons" style="width: 140px;">
     </header>
     <div class="criação-personagem" id="criacao-personagem">
-        <h1>Criação de Personagem: Informação do Personagem</h1>
-        <form>
+        <h1 id="titulo">Criação de Personagem</h1>
+        <div id="primeiro-formulario" class="primeiro-formularo" style="display: block;">
             <div class="informação">
-                <label for="nome">Nome do Personagem:</label>
-                <input type="text" id="nome" name="nome">
+                <label>Nome do Personagem:</label><input type="text" class="nome" id="nome" name="nome">
+                <label>Idade: </label><input type="number" class="status-input" name="idade" id="idade" min="16" max="60">
             </div>
             <label id="eraça">Raça: </label>
             <select id="raça">
+                <option value="Nenhum" id="Nenhum">Nenhum</option>
                 <option value="humano">Humano</option>
                 <option value="elfo">Elfo</option>
                 <option value="meioelfo">Meio-Elfo</option>
@@ -28,28 +32,72 @@
             </select>
             <label id="eclasse">Classe: </label>
             <select id="classe">
-                <option value="barbaro">Bárbaro</option>
-                <option value="bardo">Bardo</option>
-                <option value="clerigo">Clérigo</option>
-                <option value="druida">Druída</option>
-                <option value="lutador">Lutador</option>
-                <option value="monge">Monge</option>
-                <option value="paladino">Paladino</option>
-                <option value="atirador">Atirador</option>
-                <option value="sacerdote">Sacerdote</option>
-                <option value="bruxo">Bruxo</option>
-                <option value="mago">Mago</option>
-                <option value="artifice">Artífice</option>
+                <option value="guerreiro" id="guerreiro" disabled>Guerreiro</option>
+                <option value="bardo" id="bardo" disabled>Bardo</option>
+                <option value="druida" id="druida" disabled>Druída</option>
+                <option value="monge" id="monge" disabled>Monge</option>
+                <option value="paladino" id="paladino" disabled>Paladino</option>
+                <option value="atirador" id="atirador" disabled>Atirador</option>
+                <option value="sacerdote" id="sacerdote" disabled>Sacerdote</option>
+                <option value="bruxo" id="bruxo" disabled>Bruxo</option>
+                <option value="mago" id="mago" disabled>Mago</option>
+                <option value="ladino" id="ladino" disabled>Ladino</option>
+                <option value="xama" id="xama" disabled>Xamã</option>
+
             </select>
-            <div class="status-personagem" id="status-personagem">
-                <label>Força</label><input type="text" name="" id="">
-                <label>Destreza</label><input type="text" name="" id="">
-                <label>Constituição</label><input type="text" name="" id="">
-                <label>Inteligência</label><input type="text" name="" id="">
-                <label>Sabedoria</label><input type="text" name="" id="">
-                <label>Carisma</label><input type="text" name="" id="">
+            <div class="status-personagem" id="status-personagem" style="display: none;">
+                <label>Força: </label><input type="number" class="status-input" name="força" id="força" readonly>
+                <label>Destreza: </label><input type="number" class="status-input" name="destreza" id="destreza" readonly>
+                <label>Constituição: </label><input type="number" class="status-input" name="contituicao" id="contituicao" readonly>
+                <label>Inteligência: </label><input type="number" class="status-input" name="inteligencia" id="inteligencia" readonly>
+                <label>Sabedoria: </label><input type="number" class="status-input" name="sabedora" id="sabedora" readonly>
+                <label>Carisma: </label><input type="number" class="status-input" name="carisma" id="carisma" readonly>
+                <label>PV: </label><input type="number" class="status-input" name="ponto-de-vida" id="ponto-de-vida" readonly>
+                <button onclick="randomizarStatusPrimeiro()">Gerar Status</button>
+                <label id="erro-primeiro-formulario"></label>
+                <button onclick="proximoCriar()" disabled>Próximo</button>
             </div>
-        </form>
+        </div>
+        <div id="segundo-formulario" class="segundo-formularo" style="display: none;">
+            <label>Iniciativa: </label><input type="number" name="iniciativa"" id="iniciativa"" readonly>
+            <label>Velocidade: </label><input type="number" name="velocidade"" id="velocidade"" readonly>
+            <label>Alinhamento: </label>
+            <select id="alinhamento">
+                <option value="lawfulgood" id="lawfulgood" disabled>Lawful good</option>
+                <option value="good" id="good" disabled>Good</option>
+                <option value="chaoticgood" id="chaoticgood" disabled>Chaotic good</option>
+                <option value="lawfulneutral" id="lawfulneutral" disabled>Lawful neutral</option>
+                <option value="neutral" id="neutral" disabled>Neutral</option>
+                <option value="chaoticneutral" id="chaoticneutral" disabled>Chaotic neutral</option>
+                <option value="lawfulevil" id="lawfulevil" disabled>Lawful evil</option>
+                <option value="evil" id="evil" disabled>Evil</option>
+                <option value="chaoticevil" id="chaoticevil" disabled>Chaotic evil</option>
+            </select>
+            <button onclick="randomizarStatusSegundo()">Gerar Status</button>
+            <label id="erro-segundo-formulario"></label>
+            <button onclick="começar()"" disabled">Começar</button>
+        </div>
+    </div>
+    <div class="historia" id="historia" style="display: none;">
+        <label>
+            <h3 id="local">Cidade</h3>
+            <p id="acontecimento">Lorem ipsum dolor sit amet, 
+                consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut 
+                labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                Excepteur sint occaecat cupidatat non proident, 
+                sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </label>
+        <input type="radio" name="escolhaDaHistoria" id="escolhaDaHistoria1" value="escolhaRuim"><label id="oQueFazerAgoraOpcao1"></label>
+        <input type="radio" name="escolhaDaHistoria" id="escolhaDaHistoria2" value="escolhaRuim"><label id="oQueFazerAgoraOpcao2"></label>
+        <input type="radio" name="escolhaDaHistoria" id="escolhaDaHistoria3" value="escolhaRuim"><label id="oQueFazerAgoraOpcao3"></label>
+        <input type="radio" name="escolhaDaHistoria" id="escolhaDaHistoria4" value="escolhaRuim"><label id="oQueFazerAgoraOpcao4"></label>
+        <input type="radio" name="escolhaDaHistoria" id="escolhaDaHistoria5" value="escolhaRuim"><label id="oQueFazerAgoraOpcao5"></label>
+        <input type="radio" name="escolhaDaHistoria" id="escolhaDaHistoria6" value="escolhaRuim"><label id="oQueFazerAgoraOpcao6"></label>
     </div>
 </body>
+<script src="./script.js"></script>
 </html>
