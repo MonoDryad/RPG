@@ -381,6 +381,77 @@ function randomizarStatusPrimeiro(){
             document.getElementById('inteligencia').value = Math.floor(Math.random() * (15 - 5) + 5)
             document.getElementById('sabedoria').value = Math.floor(Math.random() * (15 - 5) + 5)
             document.getElementById('carisma').value = Math.floor(Math.random() * (15 - 5) + 5)
+        }else if(suaRaça == 'Elfo' && suaClasse == 'Guerreiro'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (21 - 8) + 8)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (18 - 10) + 10)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (18 - 8) + 8)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (12 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 5) + 5)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 5) + 5)
+        } else if(suaRaça == 'Elfo' && suaClasse == 'Bardo'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (12 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (11 - 3) + 3)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 12) + 12)
+        } else if(suaRaça == 'Elfo' && suaClasse == 'Monge'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (21 - 14) + 14)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (21 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (14 - 8) + 8)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (14 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (14 - 8) + 8)
+        } else if(suaRaça == 'Elfo' && suaClasse == 'Atirador'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (10 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (21 - 16) + 16)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 6) + 6)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 5) + 5)
+        } else if(suaRaça == 'Elfo' && suaClasse == 'Sacerdote'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (10 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (12 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 12) + 12)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Bruxo'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (8 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (15 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 8) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 8) + 12)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Mago'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (7 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (15 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 18) + 18)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Ladino'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (14 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (21 - 16) + 16)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (14 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 13) + 13)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (15 - 8) + 8)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (11 - 1) + 1)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Xamã'){
+            document.getElementById('força').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (15 - 5) + 5)
         } else{
 
         document.getElementById('força').value = "INVÁLIDO"
