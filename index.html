@@ -15,11 +15,10 @@
         <h1 id="titulo">Criação de Personagem</h1>
         <div id="primeiro-formulario" class="primeiro-formularo" style="display: block;">
             <div class="informação">
-                <label>Nome do Personagem:</label><input type="text" class="nome" id="nome" name="nome">
-                <label>Idade: </label><input type="number" class="status-input" name="idade" id="idade" min="16" max="60">
+                <label>Nome do Personagem:</label><input autocomplete="off" type="text" class="nome" id="nome" name="nome">
             </div>
             <label id="eraça">Raça: </label>
-            <select id="raça">
+            <select id="raça" autocomplete="off">
                 <option value="Nenhum" id="Nenhum">Nenhum</option>
                 <option value="humano">Humano</option>
                 <option value="elfo">Elfo</option>
@@ -31,7 +30,7 @@
                 <option value="tiefling">Tiefling</option>
             </select>
             <label id="eclasse">Classe: </label>
-            <select id="classe">
+            <select id="classe" autocomplete="off">
                 <option value="guerreiro" id="guerreiro" disabled>Guerreiro</option>
                 <option value="bardo" id="bardo" disabled>Bardo</option>
                 <option value="druida" id="druida" disabled>Druída</option>
@@ -43,26 +42,25 @@
                 <option value="mago" id="mago" disabled>Mago</option>
                 <option value="ladino" id="ladino" disabled>Ladino</option>
                 <option value="xama" id="xama" disabled>Xamã</option>
-
             </select>
             <div class="status-personagem" id="status-personagem" style="display: none;">
-                <label>Força: </label><input type="number" class="status-input" name="força" id="força" readonly>
-                <label>Destreza: </label><input type="number" class="status-input" name="destreza" id="destreza" readonly>
-                <label>Constituição: </label><input type="number" class="status-input" name="contituicao" id="contituicao" readonly>
-                <label>Inteligência: </label><input type="number" class="status-input" name="inteligencia" id="inteligencia" readonly>
-                <label>Sabedoria: </label><input type="number" class="status-input" name="sabedora" id="sabedora" readonly>
-                <label>Carisma: </label><input type="number" class="status-input" name="carisma" id="carisma" readonly>
-                <label>PV: </label><input type="number" class="status-input" name="ponto-de-vida" id="ponto-de-vida" readonly>
-                <button onclick="randomizarStatusPrimeiro()">Gerar Status</button>
+                <label>Força: </label><input autocomplete="off" type="number" class="status-input" name="força" id="força" readonly>
+                <label>Destreza: </label><input autocomplete="off" type="number" class="status-input" name="destreza" id="destreza" readonly>
+                <label>Constituição: </label><input autocomplete="off" type="number" class="status-input" name="contituicao" id="contituicao" readonly>
+                <label>Inteligência: </label><input autocomplete="off" type="number" class="status-input" name="inteligencia" id="inteligencia" readonly>
+                <label>Sabedoria: </label><input autocomplete="off" type="number" class="status-input" name="sabedora" id="sabedoria" readonly>
+                <label>Carisma: </label><input autocomplete="off" type="number" class="status-input" name="carisma" id="carisma" readonly>
+                <label>PV: </label><input autocomplete="off" type="number" class="status-input" name="ponto-de-vida" id="ponto-de-vida" readonly>
+                <button id="botao-randomizar" onclick="randomizarStatusPrimeiro()">Gerar Status</button>
                 <label id="erro-primeiro-formulario"></label>
-                <button onclick="proximoCriar()" disabled>Próximo</button>
+                <button id="botao-proximo-formulario" onclick="proximoCriar()" disabled>Próximo</button>
             </div>
         </div>
         <div id="segundo-formulario" class="segundo-formularo" style="display: none;">
-            <label>Iniciativa: </label><input type="number" name="iniciativa"" id="iniciativa"" readonly>
-            <label>Velocidade: </label><input type="number" name="velocidade"" id="velocidade"" readonly>
+            <label>Iniciativa: </label><input autocomplete="off" type="number" name="iniciativa"" id="iniciativa"" readonly>
+            <label>Velocidade: </label><input autocomplete="off" type="number" name="velocidade"" id="velocidade"" readonly>
             <label>Alinhamento: </label>
-            <select id="alinhamento">
+            <select id="alinhamento" autocomplete="off">
                 <option value="lawfulgood" id="lawfulgood" disabled>Lawful good</option>
                 <option value="good" id="good" disabled>Good</option>
                 <option value="chaoticgood" id="chaoticgood" disabled>Chaotic good</option>
@@ -73,7 +71,6 @@
                 <option value="evil" id="evil" disabled>Evil</option>
                 <option value="chaoticevil" id="chaoticevil" disabled>Chaotic evil</option>
             </select>
-            <button onclick="randomizarStatusSegundo()">Gerar Status</button>
             <label id="erro-segundo-formulario"></label>
             <button onclick="começar()"" disabled">Começar</button>
         </div>

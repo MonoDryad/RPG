@@ -196,7 +196,6 @@ function setEscolha(){
             document.getElementById('paladino').disabled = true
             document.getElementById('xama').disabled = true
 
-            document.getElementById('status-personagem').style.display = 'none'
     }
 
     switch(escolherClasse){
@@ -294,6 +293,53 @@ function setEscolha(){
             filtro2Alinhamento = 0
 
             document.getElementById('status-personagem').style.display = 'none'
+    }
+}
+
+function randomizarStatusPrimeiro(){
+    // Local de cópia // APAGAR // para pegar o input FORÇA, DESTREZA, etc.. ///////////
+    document.getElementById('força').value                                            //
+    document.getElementById('destreza').value                                         //
+    document.getElementById('contituicao').value                                      //
+    document.getElementById('inteligencia').value                                     //
+    document.getElementById('sabedoria').value                                        //
+    document.getElementById('carisma').value                                          //
+    document.getElementById('ponto-de-vida').value                                    //
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // EXPERIMENTO
+    // Estrutura de Loop
+    // Cada número dentro da variável RANDOM vai acionar o SWITCH
+    // e em cada CASE, vai ser gerado um valor randômico para cada status do personagem
+    // FORÇA, DESTREZA, CONTITUIÇÃO, INTELIGÊNCIA, SABEDORA, CARISMA E PONTOS DE VIDA.
+    // A raça e a classe vai modificar esse valor.
+    for(let random = 0;random < 8; random++){
+        console.log(random)
+        switch(random){
+            case 1:
+                document.getElementById('força').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+            case 2:
+                document.getElementById('destreza').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+            case 3:
+                document.getElementById('contituicao').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+            case 4:
+                document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+            case 5:
+                document.getElementById('sabedoria').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+            case 6:
+                document.getElementById('carisma').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+            case 7:
+                document.getElementById('botao-randomizar').disabled = true
+                document.getElementById('botao-proximo-formulario').disabled = false
+                document.getElementById('ponto-de-vida').value = Math.floor(Math.random() * (18 - 5) + 5)
+                break
+        }
     }
 }
 
