@@ -297,52 +297,101 @@ function setEscolha(){
 }
 
 function randomizarStatusPrimeiro(){
-    // Local de cópia // APAGAR // para pegar o input FORÇA, DESTREZA, etc.. ///////////
-    document.getElementById('força').value                                            //
-    document.getElementById('destreza').value                                         //
-    document.getElementById('contituicao').value                                      //
-    document.getElementById('inteligencia').value                                     //
-    document.getElementById('sabedoria').value                                        //
-    document.getElementById('carisma').value                                          //
-    document.getElementById('ponto-de-vida').value                                    //
-    ////////////////////////////////////////////////////////////////////////////////////
-
-    // EXPERIMENTO
-    // Estrutura de Loop
-    // Cada número dentro da variável RANDOM vai acionar o SWITCH
-    // e em cada CASE, vai ser gerado um valor randômico para cada status do personagem
+    // Agora Testando sem o LOOP
+    // 
+    // Vai ser gerado um valor randômico para cada status do personagem
     // FORÇA, DESTREZA, CONTITUIÇÃO, INTELIGÊNCIA, SABEDORA, CARISMA E PONTOS DE VIDA.
     // A raça e a classe vai modificar esse valor.
-    for(let random = 0;random < 8; random++){
-        console.log(random)
-        switch(random){
-            case 1:
-                document.getElementById('força').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-            case 2:
-                document.getElementById('destreza').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-            case 3:
-                document.getElementById('contituicao').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-            case 4:
-                document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-            case 5:
-                document.getElementById('sabedoria').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-            case 6:
-                document.getElementById('carisma').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-            case 7:
-                document.getElementById('botao-randomizar').disabled = true
-                document.getElementById('botao-proximo-formulario').disabled = false
-                document.getElementById('ponto-de-vida').value = Math.floor(Math.random() * (18 - 5) + 5)
-                break
-        }
-    }
-}
+        if(suaRaça == 'Humano' && suaClasse == 'Guerreiro'){
 
+            document.getElementById('força').value = Math.floor(Math.random() * (21 - 8) + 8)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (18 - 10) + 10)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (18 - 8) + 8)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (12 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 2) + 2)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 2) + 2)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Bardo'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (12 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (11 - 3) + 3)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 12) + 12)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Monge'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (21 - 14) + 14)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (21 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (14 - 8) + 8)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (14 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (14 - 8) + 8)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Paladino'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (18 - 14) + 14)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (18 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 12) + 12)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Atirador'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (10 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (21 - 16) + 16)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (18 - 6) + 6)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 6) + 6)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 5) + 5)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Sacerdote'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (10 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (12 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 12) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 12) + 12)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Bruxo'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (8 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (15 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 8) + 12)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 8) + 12)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Mago'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (7 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (15 - 6) + 6)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (12 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (21 - 18) + 18)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (21 - 18) + 18)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Ladino'){
+
+            document.getElementById('força').value = Math.floor(Math.random() * (14 - 4) + 4)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (21 - 16) + 16)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (14 - 4) + 4)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (21 - 13) + 13)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (15 - 8) + 8)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (11 - 1) + 1)
+        } else if(suaRaça == 'Humano' && suaClasse == 'Xamã'){
+            document.getElementById('força').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('destreza').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('contituicao').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('inteligencia').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('sabedoria').value = Math.floor(Math.random() * (15 - 5) + 5)
+            document.getElementById('carisma').value = Math.floor(Math.random() * (15 - 5) + 5)
+        } else{
+
+        document.getElementById('força').value = "INVÁLIDO"
+        document.getElementById('destreza').value = "INVÁLIDO"
+        document.getElementById('contituicao').value = "INVÁLIDO"
+        document.getElementById('inteligencia').value = "INVÁLIDO"
+        document.getElementById('sabedoria').value = "INVÁLIDO"
+        document.getElementById('carisma').value = "INVÁLIDO"
+        }
+        
+    }
 // Mudar a página de criação de personagem
 function proximoCriar(){
     seuNome = document.getElementById('nome').value
