@@ -230,9 +230,6 @@ function randomizarStatusPrimeiro(){
     let proximo = 0
     let calcularVida = 0
 
-    // Vai ser gerado um valor randômico para cada status do personagem
-    // FORÇA, DESTREZA, CONTITUIÇÃO, INTELIGÊNCIA, SABEDORA, CARISMA E PONTOS DE VIDA.
-    // A raça e a classe vai modificar esse valor.
         if(suaRaça == 'Humano' && suaClasse == 'Guerreiro'){
 
             document.getElementById('força').value = Math.floor(Math.random() * (21 - 8) + 8)
@@ -759,4 +756,34 @@ function começar(){
     + destreza + "\n Constituição: " + constituicao + "\n Inteligência: " + inteligencia + "\n Sabedoria: " + sabedoria + "\n Carisma: " + carisma + "\n Pontos de Vida: " + pv + ""
     + "\n Velocidade: " + velocidade + "\n Iniciativa: " + iniciativa + "\n Alinhamento: " + seuAlinhamento
 
+}
+
+// Function para recomeçar a criação de personagem
+
+function voltar(){
+    força = '', destreza = '', constituicao = '', inteligencia = '', sabedoria = '', carisma = '', pv = '', iniciativa = '', velocidade = ''
+    console.log(força, destreza, constituicao, inteligencia, sabedoria, carisma, pv, iniciativa, velocidade)
+
+    document.getElementById('força').value = força
+    document.getElementById('destreza').value = destreza 
+    document.getElementById('contituicao').value = constituicao
+    document.getElementById('inteligencia').value = inteligencia
+    document.getElementById('sabedoria').value = sabedoria
+    document.getElementById('carisma').value = carisma
+    document.getElementById('ponto-de-vida').value = pv
+
+    document.getElementById('primeiro-formulario').style.display = "block"
+    document.getElementById('status-personagem').style.display = "none"
+
+    document.getElementById('texto-personagem-status').style.display = "none"
+    document.getElementById('ultimaverificação').style.display = "none"
+    document.getElementById('voltar').style.display = "none"
+
+    document.getElementById('raça').disabled = false
+    document.getElementById('classe').disabled = false
+    document.getElementById('botao-randomizar').disabled = false
+    document.getElementById('botao-proximo-formulario').disabled = true
+    
+    document.getElementById('alinhamento').disabled = true
+    document.getElementById('randomizar2').disabled = false
 }
