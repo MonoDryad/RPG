@@ -1,38 +1,33 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////
-// Criação de personagem // Pegar os Status e salvar // Local Storage ou Apenas em uma Var?     //
-// Status randômico // cada raça tem sua classe e alinhamento, assim como seus status gerado -  //
-// - de forma aleatória                                                                         //
-//////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// Criação de personagem // Pegar os Status e salvar // Local Storage ou Apenas em uma Var?
+// Status randômico // cada raça tem sua classe e alinhamento, assim como seus status gerado -
+// - de forma aleatória
 
-/////////////////////////////////////////////////////////////////////////////
-// Informação do Personagem // - Em progresso 
+
 let seuNome, suaRaça, suaClasse, seuAlinhamento
 let força, destreza, constituicao, inteligencia, sabedoria, carisma, pv
 let velocidade, iniciativa                                                  
 
-///////////////////////////////////////////////////////////
-// querySelector das opções select                       //
-let raça = document.querySelector('#raça')               //
-let classe = document.querySelector('#classe')           //
-let alinhamento = document.querySelector('#alinhamento') //
-///////////////////////////////////////////////////////////
-// addEventListener para ativar a função de escolha      //
-raça.addEventListener('change', setEscolha)              //
-classe.addEventListener('change', setEscolha)            //
-alinhamento.addEventListener('change', setAlinhamento)   //
-///////////////////////////////////////////////////////////
+let escolhaDaHistoria, momentoHistoria
+
+let raça = document.querySelector('#raça')
+let classe = document.querySelector('#classe')
+let alinhamento = document.querySelector('#alinhamento')
+
+
+raça.addEventListener('change', setEscolha)
+classe.addEventListener('change', setEscolha)
+alinhamento.addEventListener('change', setAlinhamento)
+
 
 function setEscolha(){
     let escolherRaça = raça.value
     let escolherClasse = classe.value
-    let escolherAlinhamento = alinhamento.value
 
     switch(escolherRaça){
         case 'humano':
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = 'Humano'
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = false
             document.getElementById('bardo').disabled = false
             document.getElementById('druida').disabled = true
@@ -46,10 +41,8 @@ function setEscolha(){
             document.getElementById('xama').disabled = true
         break
         case 'elfo':
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = 'Elfo'
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = false
             document.getElementById('bardo').disabled = false
             document.getElementById('druida').disabled = false
@@ -63,11 +56,9 @@ function setEscolha(){
             document.getElementById('xama').disabled = true
         break
         case 'meioelfo':
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = 'Meio-Elfo'
 
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = false
             document.getElementById('bardo').disabled = false
             document.getElementById('druida').disabled = false
@@ -81,10 +72,8 @@ function setEscolha(){
             document.getElementById('xama').disabled = true
         break
         case 'meioorc':
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = 'Meio-Orc'
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = false
             document.getElementById('bardo').disabled = true
             document.getElementById('druida').disabled = true
@@ -98,10 +87,8 @@ function setEscolha(){
             document.getElementById('xama').disabled = true
         break
         case 'anao':
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = 'Anão'
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = false
             document.getElementById('bardo').disabled = true
             document.getElementById('druida').disabled = true
@@ -115,10 +102,8 @@ function setEscolha(){
             document.getElementById('xama').disabled = false
         break
         case 'gnomo':
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = 'Gnomo'
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = false
             document.getElementById('bardo').disabled = true
             document.getElementById('druida').disabled = true
@@ -132,10 +117,8 @@ function setEscolha(){
             document.getElementById('xama').disabled = true
         break
         default:
-            // Colocando em uma variável fora da function, indicando a sua raça
             suaRaça = ''
 
-            // habilitando e desabilitando as opçoes de classes
             document.getElementById('guerreiro').disabled = true
             document.getElementById('bardo').disabled = true
             document.getElementById('druida').disabled = true
@@ -147,72 +130,60 @@ function setEscolha(){
             document.getElementById('ladino').disabled = true
             document.getElementById('paladino').disabled = true
             document.getElementById('xama').disabled = true
-
     }
 
     switch(escolherClasse){
         case 'guerreiro':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Guerreiro'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'bardo':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Bardo'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'druida':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Druída'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'monge':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Monge'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'paladino':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Paladino'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'atirador':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Atirador'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'sacerdote':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Sacerdote'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'bruxo':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Bruxo'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'mago':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Mago'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'ladino':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Ladino'
 
             document.getElementById('status-personagem').style.display = 'block'
             break
         case 'xama':
-            // Colocando em uma variável fora da function, indicando a sua classe
             suaClasse = 'Xamã'
 
             document.getElementById('status-personagem').style.display = 'block'
@@ -670,10 +641,8 @@ function randomizarStatusPrimeiro(){
         document.getElementById('ponto-de-vida').value = Math.floor(Math.random() * (100 - document.getElementById('contituicao').value) + document.getElementById('contituicao').value)
     }
 }
-// Mudar a página de criação de personagem
+
 function proximoCriar(){
-    ///////////////////////////////////////////////////////////////////////
-    // Pegar todos os valores que não foram pegos antes.                 //
     seuNome = document.getElementById('nome').value
     força = document.getElementById('força').value
     destreza = document.getElementById('destreza').value
@@ -758,8 +727,6 @@ function começar(){
 
 }
 
-// Function para recomeçar a criação de personagem
-
 function voltar(){
     força = '', destreza = '', constituicao = '', inteligencia = '', sabedoria = '', carisma = '', pv = '', iniciativa = '', velocidade = ''
     console.log(força, destreza, constituicao, inteligencia, sabedoria, carisma, pv, iniciativa, velocidade)
@@ -786,4 +753,74 @@ function voltar(){
     
     document.getElementById('alinhamento').disabled = true
     document.getElementById('randomizar2').disabled = false
+    document.getElementById('titulo').style.display = "block"
 }
+
+function ultimaverificação(){
+    document.getElementById('primeiro-formulario').style.display = "none"
+    document.getElementById('status-personagem').style.display = "none"
+
+    document.getElementById('texto-personagem-status').style.display = "none"
+    document.getElementById('ultimaverificação').style.display = "none"
+    document.getElementById('voltar').style.display = "none"
+
+    document.getElementById('raça').disabled = false
+    document.getElementById('classe').disabled = false
+    document.getElementById('botao-randomizar').disabled = true
+    document.getElementById('botao-proximo-formulario').disabled = true
+    
+    document.getElementById('alinhamento').disabled = true
+    document.getElementById('randomizar2').disabled = true
+    document.getElementById('titulo').style.display = "none"
+
+    document.getElementById('local').style.display = "block"
+    document.getElementById('acontecimento').style.display = "block"
+    document.getElementById('historia').style.display = "block"
+
+    momentoHistoria = 1
+}
+
+function continuarHistoria(){
+    switch(momentoHistoria){
+        case 1:
+            document.getElementById('local').textContent = "Cidade"
+            document.getElementById('acontecimento').textContent = "Merda aconteceu, e você, " + seuNome + " é um idiota"
+        momentoHistoria = 2
+        break
+        case 2:
+            document.getElementById('local').textContent = "Vila"
+            document.getElementById('acontecimento').textContent = "Você é um " + suaRaça + " e tenta parecer um idiota"
+        momentoHistoria = 3
+            break
+        case 3:
+            document.getElementById('local').textContent = "Vila"
+            document.getElementById('acontecimento').textContent = "Você é um " + suaRaça + " e tenta parecer um idiota"
+        escolhaDaHistoria = 1
+        escolherRotaHistoria()
+        break
+        case 4:
+    }
+}
+ function escolherRotaHistoria(){
+     if(momentoHistoria == 3 && escolhaDaHistoria == 1){
+        console.log("Pergunta 1")
+
+        document.getElementById('confirmarEscolha').style.display = "block"
+
+        document.getElementById('escolhaDaHistoria1').style.display = "initial"
+        document.getElementById('escolhaDaHistoria2').style.display = "initial"
+        document.getElementById('escolhaDaHistoria3').style.display = "initial"
+        document.getElementById('escolhaDaHistoria4').style.display = "initial"
+        document.getElementById('escolhaDaHistoria5').style.display = "initial"
+        document.getElementById('escolhaDaHistoria6').style.display = "initial"
+
+        document.getElementById('oQueFazerAgoraOpcao1').innerHTML = "Opção 1"
+        document.getElementById('oQueFazerAgoraOpcao2').innerHTML = "Opção 2"
+        document.getElementById('oQueFazerAgoraOpcao3').innerHTML = "Opção 3"
+        document.getElementById('oQueFazerAgoraOpcao4').innerHTML = "Opção 4"
+        document.getElementById('oQueFazerAgoraOpcao5').innerHTML = "Opção 5"
+        document.getElementById('oQueFazerAgoraOpcao6').innerHTML = "Opção 6"
+     }
+ }
+
+

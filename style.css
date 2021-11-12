@@ -5,8 +5,8 @@ body{
 }
 
 textarea{
-  width: 340px;
-  height: 255px;
+  width: 370px;
+  height: 295px;
   color: white;
   font-size: 16px;
   background-color: #11141d;
@@ -20,4 +20,74 @@ textarea{
 
 .nome{
   width: 180px;
+}
+
+input[type="radio" i] {
+  background-color: initial;
+  cursor:pointer;
+  appearance: auto;
+  box-sizing: border-box;
+  margin: 3px 3px 0px 5px;
+  padding: initial;
+  border: initial;
+}
+
+#escolhaDaHistoria1{
+  position: absolute;
+  inset: 353px 3px;
+}
+
+#oQueFazerAgoraOpcao1{
+  position: absolute;
+  inset: 351px 28px;
+}
+
+#escolhaDaHistoria2{
+  position: absolute;
+  inset: 383px 3px;
+}
+
+#oQueFazerAgoraOpcao2{
+  position: absolute;
+  inset: 381px 28px;
+}
+
+#escolhaDaHistoria3{
+  position: absolute;
+  inset: 413px 3px;
+}
+
+#oQueFazerAgoraOpcao3{
+  position: absolute;
+  inset: 411px 28px;
+}
+
+#escolhaDaHistoria4{
+  position: absolute;
+  inset: 443px 3px;
+}
+
+#oQueFazerAgoraOpcao4{
+  position: absolute;
+  inset: 441px 28px;
+}
+
+#escolhaDaHistoria5{
+  position: absolute;
+  inset: 473px 3px;
+}
+
+#oQueFazerAgoraOpcao5{
+  position: absolute;
+  inset: 471px 28px;
+}
+
+#escolhaDaHistoria6{
+  position: absolute;
+  inset: 503px 3px;
+}
+
+#oQueFazerAgoraOpcao6{
+  position: absolute;
+  inset: 501px 28px;
 }
