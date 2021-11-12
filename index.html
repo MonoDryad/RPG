@@ -23,11 +23,8 @@
                 <option value="humano">Humano</option>
                 <option value="elfo">Elfo</option>
                 <option value="meioelfo">Meio-Elfo</option>
-                <option value="meioorc">Meio-Orc</option>
                 <option value="anao">Anão</option>
                 <option value="gnomo">Gnomo</option>
-                <option value="halfling">Halfling</option>
-                <option value="tiefling">Tiefling</option>
             </select>
             <label id="eclasse">Classe: </label>
             <select id="classe" autocomplete="off">
@@ -59,22 +56,27 @@
         <div id="segundo-formulario" class="segundo-formularo" style="display: none;">
             <label>Iniciativa: </label><input autocomplete="off" type="number" name="iniciativa"" id="iniciativa"" readonly>
             <label>Velocidade: </label><input autocomplete="off" type="number" name="velocidade"" id="velocidade"" readonly>
+            <button id="randomizar2" onclick="randomizarStatusSegundo()">Gerar Status</button>
             <label>Alinhamento: </label>
-            <select id="alinhamento" autocomplete="off">
-                <option value="lawfulgood" id="lawfulgood" disabled>Lawful good</option>
-                <option value="good" id="good" disabled>Good</option>
-                <option value="chaoticgood" id="chaoticgood" disabled>Chaotic good</option>
-                <option value="lawfulneutral" id="lawfulneutral" disabled>Lawful neutral</option>
-                <option value="neutral" id="neutral" disabled>Neutral</option>
-                <option value="chaoticneutral" id="chaoticneutral" disabled>Chaotic neutral</option>
-                <option value="lawfulevil" id="lawfulevil" disabled>Lawful evil</option>
-                <option value="evil" id="evil" disabled>Evil</option>
-                <option value="chaoticevil" id="chaoticevil" disabled>Chaotic evil</option>
+            <select id="alinhamento" autocomplete="off" disabled>
+                <option value="lawfulgood" id="lawfulgood">Lawful good</option>
+                <option value="good" id="good">Good</option>
+                <option value="chaoticgood" id="chaoticgood">Chaotic good</option>
+                <option value="lawfulneutral" id="lawfulneutral">Lawful neutral</option>
+                <option value="neutral" id="neutral">Neutral</option>
+                <option value="chaoticneutral" id="chaoticneutral">Chaotic neutral</option>
+                <option value="lawfulevil" id="lawfulevil">Lawful evil</option>
+                <option value="evil" id="evil">Evil</option>
+                <option value="chaoticevil" id="chaoticevil">Chaotic evil</option>
             </select>
             <label id="erro-segundo-formulario"></label>
-            <button onclick="começar()"" disabled">Começar</button>
+            <button id="começarHistoria" onclick="começar()" disabled>Começar</button>
+
         </div>
     </div>
+    <textarea id="texto-personagem-status" style="display: none;" readonly autocomplete="off"></textarea>
+    <button id="ultimaverificação" style="display: none;" onclick="ultimaverificação()">Continuar</button>
+    <button id="voltar" style="display: none;" onclick="voltar()">Voltar</button>
     <div class="historia" id="historia" style="display: none;">
         <label>
             <h3 id="local">Cidade</h3>
