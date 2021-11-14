@@ -28,48 +28,47 @@ function setEscolha(){
         case 'humano':
             suaRaça = 'Humano'
 
-            document.getElementById('guerreiro').disabled = false
-            document.getElementById('bardo').disabled = false
-            document.getElementById('druida').disabled = true
-            document.getElementById('monge').disabled = false
-            document.getElementById('sacerdote').disabled = false
-            document.getElementById('mago').disabled = false
-            document.getElementById('bruxo').disabled = false
-            document.getElementById('atirador').disabled = false
-            document.getElementById('ladino').disabled = false
-            document.getElementById('paladino').disabled = false
-            document.getElementById('xama').disabled = true
+            $('#guerreiro').attr('disabled', false)
+            $('#bardo').attr('disabled', false)
+            $('#druida').attr('disabled', true)
+            $('#monge').attr('disabled', false)
+            $('#sacerdote').attr('disabled', false)
+            $('#mago').attr('disabled', false)
+            $('#bruxo').attr('disabled', false)
+            $('#atirador').attr('disabled', false)
+            $('#ladino').attr('disabled', false)
+            $('#paladino').attr('disabled', false)
+            $('#xama').attr('disabled', true)
         break
         case 'elfo':
             suaRaça = 'Elfo'
 
-            document.getElementById('guerreiro').disabled = false
-            document.getElementById('bardo').disabled = false
-            document.getElementById('druida').disabled = false
-            document.getElementById('monge').disabled = false
-            document.getElementById('sacerdote').disabled = false
-            document.getElementById('mago').disabled = false
-            document.getElementById('bruxo').disabled = true
-            document.getElementById('atirador').disabled = false
-            document.getElementById('ladino').disabled = false
-            document.getElementById('paladino').disabled = true
-            document.getElementById('xama').disabled = true
+            $('#guerreiro').attr('disabled', false)
+            $('#bardo').attr('disabled', false)
+            $('#druida').attr('disabled', false)
+            $('#monge').attr('disabled', false)
+            $('#sacerdote').attr('disabled', false)
+            $('#mago').attr('disabled', false)
+            $('#bruxo').attr('disabled', true)
+            $('#atirador').attr('disabled', false)
+            $('#ladino').attr('disabled', false)
+            $('#paladino').attr('disabled', true)
+            $('#xama').attr('disabled', true)
         break
         case 'meioelfo':
             suaRaça = 'Meio-Elfo'
 
-
-            document.getElementById('guerreiro').disabled = false
-            document.getElementById('bardo').disabled = false
-            document.getElementById('druida').disabled = false
-            document.getElementById('monge').disabled = false
-            document.getElementById('sacerdote').disabled = false
-            document.getElementById('mago').disabled = false
-            document.getElementById('bruxo').disabled = true
-            document.getElementById('atirador').disabled = false
-            document.getElementById('ladino').disabled = false
-            document.getElementById('paladino').disabled = false
-            document.getElementById('xama').disabled = true
+            $('#guerreiro').attr('disabled', false)
+            $('#bardo').attr('disabled', false)
+            $('#druida').attr('disabled', true)
+            $('#monge').attr('disabled', false)
+            $('#sacerdote').attr('disabled', false)
+            $('#mago').attr('disabled', false)
+            $('#bruxo').attr('disabled', true)
+            $('#atirador').attr('disabled', false)
+            $('#ladino').attr('disabled', false)
+            $('#paladino').attr('disabled', false)
+            $('#xama').attr('disabled', true)
         break
         case 'meioorc':
             suaRaça = 'Meio-Orc'
