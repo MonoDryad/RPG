@@ -13,44 +13,54 @@
     </header>
     <div class="criação-personagem" id="criacao-personagem">
         <h1 id="titulo">Criação de Personagem</h1>
-        <div id="primeiro-formulario" class="primeiro-formularo" style="display: block;">
+        <div id="primeiro-formulario" class="primeiro-formulario" style="display: block;">
             <div class="informação">
-                <label>Nome do Personagem:</label><input autocomplete="off" type="text" class="nome" id="nome" name="nome">
+                <label>Nome </label><input autocomplete="off" type="text" class="nome" id="nome" name="nome">
             </div>
-            <label id="eraça">Raça: </label>
+            <label id="eraça">Raça </label>
+
+            <label id="tituloRaça">Raça</label>
+            <textarea id="descriçãoRaça" readonly></textarea>
+            
             <select id="raça" autocomplete="off">
                 <option value="Nenhum" id="Nenhum">Nenhum</option>
                 <option value="humano">Humano</option>
                 <option value="elfo">Elfo</option>
                 <option value="meioelfo">Meio-Elfo</option>
+                <option value="meioorc">Meio-Orc</option>
                 <option value="anao">Anão</option>
                 <option value="gnomo">Gnomo</option>
             </select>
-            <label id="eclasse">Classe: </label>
+            <label id="eclasse">Classe </label>
+
+            <label id="tituloClasse">Classe</label>
+            <textarea id="descriçãoClasse" readonly></textarea>
+
             <select id="classe" autocomplete="off">
-                <option value="guerreiro" id="guerreiro" disabled>Guerreiro</option>
-                <option value="bardo" id="bardo" disabled>Bardo</option>
-                <option value="druida" id="druida" disabled>Druída</option>
-                <option value="monge" id="monge" disabled>Monge</option>
-                <option value="paladino" id="paladino" disabled>Paladino</option>
-                <option value="atirador" id="atirador" disabled>Atirador</option>
-                <option value="sacerdote" id="sacerdote" disabled>Sacerdote</option>
-                <option value="bruxo" id="bruxo" disabled>Bruxo</option>
-                <option value="mago" id="mago" disabled>Mago</option>
-                <option value="ladino" id="ladino" disabled>Ladino</option>
-                <option value="xama" id="xama" disabled>Xamã</option>
+                <option value="nenhumclass" id="nenhumclass">Nenhum</option>
+                <option value="guerreiro" id="guerreiro">Guerreiro</option>
+                <option value="bardo" id="bardo">Bardo</option>
+                <option value="druida" id="druida">Druída</option>
+                <option value="monge" id="monge">Monge</option>
+                <option value="paladino" id="paladino">Paladino</option>
+                <option value="atirador" id="atirador">Atirador</option>
+                <option value="sacerdote" id="sacerdote">Sacerdote</option>
+                <option value="bruxo" id="bruxo">Bruxo</option>
+                <option value="mago" id="mago">Mago</option>
+                <option value="ladino" id="ladino">Ladino</option>
             </select>
-            <div class="status-personagem" id="status-personagem" style="display: none;">
-                <label>Força: </label><input autocomplete="off" type="number" class="status-input" name="força" id="força" readonly>
-                <label>Destreza: </label><input autocomplete="off" type="number" class="status-input" name="destreza" id="destreza" readonly>
-                <label>Constituição: </label><input autocomplete="off" type="number" class="status-input" name="contituicao" id="contituicao" readonly>
-                <label>Inteligência: </label><input autocomplete="off" type="number" class="status-input" name="inteligencia" id="inteligencia" readonly>
-                <label>Sabedoria: </label><input autocomplete="off" type="number" class="status-input" name="sabedora" id="sabedoria" readonly>
-                <label>Carisma: </label><input autocomplete="off" type="number" class="status-input" name="carisma" id="carisma" readonly>
-                <label>PV: </label><input autocomplete="off" type="number" class="status-input" name="ponto-de-vida" id="ponto-de-vida" readonly>
+            <div class="status-personagem" id="status-personagem">
+                <label id='Status'>Status</label>
+                <label id='forçalbl'>Força</label><input autocomplete="off" type="text" class="status-input" name="força" id="força" readonly>
+                <label id='destrezalbl'>Destreza </label><input autocomplete="off" type="text" class="status-input" name="destreza" id="destreza" readonly>
+                <label id='constituicaolbl'>Constituição </label><input autocomplete="off" type="text" class="status-input" name="contituicao" id="contituicao" readonly>
+                <label id='inteligencialbl'>Inteligência </label><input autocomplete="off" type="text" class="status-input" name="inteligencia" id="inteligencia" readonly>
+                <label id='sabedorialbl'>Sabedoria </label><input autocomplete="off" type="text" class="status-input" name="sabedora" id="sabedoria" readonly>
+                <label id='carismalbl'>Carisma </label><input autocomplete="off" type="text" class="status-input" name="carisma" id="carisma" readonly>
+                <label id='pvlbl'>PV </label><input autocomplete="off" type="text" class="status-input" name="ponto-de-vida" id="ponto-de-vida" readonly>
                 <button id="botao-randomizar" onclick="randomizarStatusPrimeiro()">Gerar Status</button>
                 <label id="erro-primeiro-formulario"></label>
-                <button id="botao-proximo-formulario" onclick="proximoCriar()" disabled>Próximo</button>
+                <button id="botao-proximo-formulario" onclick="proximoCriar()">Próximo</button>
             </div>
         </div>
         <div id="segundo-formulario" class="segundo-formularo" style="display: none;">
@@ -69,10 +79,10 @@
                 <option value="evil" id="evil">Evil</option>
                 <option value="chaoticevil" id="chaoticevil">Chaotic evil</option>
             </select>
-            <label id="erro-segundo-formulario"></label>
+            
             <button id="começarHistoria" onclick="começar()" disabled>Começar</button>
-
         </div>
+        <label id="erro-segundo-formulario"></label>
     </div>
     <textarea id="texto-personagem-status" style="display: none;" readonly autocomplete="off"></textarea>
     <button id="ultimaverificação" style="display: none;" onclick="ultimaverificação()">Continuar</button>

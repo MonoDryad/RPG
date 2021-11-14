@@ -1,7 +1,7 @@
 body{
   color: wheat;
   background-color: #14141d;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Augusta;
 }
 
 textarea{
@@ -12,6 +12,9 @@ textarea{
   background-color: #11141d;
   border: 2px grey solid;
   border-radius: 10px;
+}
+.status-personagem{
+display: none;
 }
 
 .status-input{
@@ -90,4 +93,237 @@ input[type="radio" i] {
 #oQueFazerAgoraOpcao6{
   position: absolute;
   inset: 501px 28px;
+}
+
+#criacao-personagem{
+  color: black;
+  font-weight: bolder;
+  background-image: url(./imagens/criador_de_personagem.jpg);
+  padding: 9px;
+  border-radius: 4px;
+  font-size: 24px;
+  position: absolute;
+  top: 10%;
+  bottom: 3%;
+  left: 2%;
+  right: 2%;
+}
+
+#primeiro-formulario select#raça{
+  color: black;
+  background-color: transparent;
+  border-style: none;
+  font-family: Augusta;
+  font-size: 24px;
+  position: absolute;
+  top: 27.6%;
+  left: 6%;
+}
+
+#primeiro-formulario input#nome{
+  color: black;
+  background-color: transparent;
+  border-style: none;
+  font-family: Augusta;
+  font-size: 24px;
+  position: absolute;
+  top: 22.5%;
+  left: 6%;
+}
+
+#primeiro-formulario input#nome:hover{
+  color: white;
+  background-color: black;
+  border-style: none;
+  outline: 0;
+}
+
+#primeiro-formulario #eclasse{
+  color: black;
+  border-style: none;
+  font-family: Augusta;
+  font-size: 24px;
+  position: absolute;
+  top: 32.5%;
+  left: 0.7%
+}
+
+#primeiro-formulario select#classe{
+  color: black;
+  background-color: transparent;
+  border-style: none;
+  font-family: Augusta;
+  font-size: 24px;
+  position: absolute;
+  top: 32.5%;
+  left: 6%;
+}
+
+
+#primeiro-formulario option{
+  color: black;
+  border-style: none;
+  background-color: transparent;
+}
+
+#status-personagem{
+  position: absolute;
+  top: 40%;
+  bottom: 40%
+}
+
+#Status{
+  font-size: 30px;
+}
+
+#status-personagem #forçalbl{
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
+
+#status-personagem #destrezalbl{
+  position: absolute;
+  top: 60%;
+  left: 0%;
+}
+
+#status-personagem #constituicaolbl{
+  position: absolute;
+  top: 80%;
+  left: 0%;
+}
+
+#status-personagem #inteligencialbl{
+  position: absolute;
+  top: 100%;
+  left: 0%;
+}
+
+#status-personagem #sabedorialbl{
+  position: absolute;
+  top: 120%;
+  left: 0%;
+}
+
+#status-personagem #carismalbl{
+  position: absolute;
+  top: 140%;
+  left: 0%;
+}
+
+#status-personagem #pvlbl{
+  position: absolute;
+  top: 160%;
+  left: 0%;
+}
+
+#status-personagem input{
+  background-color: transparent;
+  font-family: Augusta;
+  border: 0;
+  text-align: right;
+  font-size: 20px;
+}
+
+#status-personagem input:hover{
+  color: red;
+  cursor: default;
+}
+
+#status-personagem input:focus{
+  color: red;
+  cursor: default;
+  outline: 0;
+}
+
+#status-personagem #força{
+  position: absolute;
+  top: 40%;
+  left: 43%;
+}
+
+
+#status-personagem #destreza{
+  position: absolute;
+  top: 60%;
+  left: 43%;
+}
+
+#status-personagem #contituicao{
+  position: absolute;
+  top: 80%;
+  left: 43%;
+}
+
+#status-personagem #inteligencia{
+  position: absolute;
+  top: 100%;
+  left: 43%;
+}
+
+#status-personagem #sabedoria{
+  position: absolute;
+  top: 120%;
+  left: 43%;
+}
+
+#status-personagem #carisma{
+  position: absolute;
+  top: 140%;
+  left: 43%;
+}
+
+#status-personagem #ponto-de-vida{
+  position: absolute;
+  top: 160%;
+  left: 43%;
+}
+
+#descriçãoRaça{
+  position: absolute;
+  top: 10%;
+  right: 2.5%;
+  width: 580px;
+  height: 48%;
+  font-family: Augusta;
+  font-size: 20px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  font-weight: bolder;
+  border: none;
+}
+
+#descriçãoClasse{
+  position: absolute;
+  top: 65%;
+  right: 2.5%;
+  width: 580px;
+  height: 29%;
+  font-family: Augusta;
+  font-size: 20px;
+  background-color: transparent;
+  color: black;
+  outline: none;
+  font-weight: bolder;
+  border: none;
+}
+
+#tituloRaça{
+  position: absolute;
+  top: 2%;
+  right: 40.5%;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+#tituloClasse{
+  position: absolute;
+  top: 57%;
+  right: 37%;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: underline;
 }

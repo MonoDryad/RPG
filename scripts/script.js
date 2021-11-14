@@ -3,6 +3,12 @@
 // Status randômico // cada raça tem sua classe e alinhamento, assim como seus status gerado -
 // - de forma aleatória
 
+$('#status-personagem').hide()
+$('#classe').hide()
+$('#eclasse').hide()
+$('#descriçãoRaça').hide()
+$('#descriçãoClasse').hide()
+
 
 let seuNome, suaRaça, suaClasse, seuAlinhamento
 let força, destreza, constituicao, inteligencia, sabedoria, carisma, pv
@@ -18,105 +24,138 @@ let classe = $("#classe").get(0)
 let alinhamento = $("#alinhamento").get(0)
 
 
-raça.addEventListener('change', setEscolha)
-classe.addEventListener('change', setEscolha)
+raça.addEventListener('change', setRaça)
+classe.addEventListener('change', setClasse)
 alinhamento.addEventListener('change', setAlinhamento)
 
 
-function setEscolha(){
+function setRaça(){
     let escolherRaça = raça.value
-    let escolherClasse = classe.value
 
     switch(escolherRaça){
         case 'humano':
             suaRaça = 'Humano'
+            $('#descriçãoRaça').show()
+            $('#tituloRaça').text('Humano')
+            $('#tituloRaça').css('right', '36.5%')
+            $('#descriçãoRaça').text( '   Nos confins da maioria dos mundos, os humanos são a mais jovem das raças comuns, chegando mais tarde no cenário mundial e com uma vida curta, se comparados aos  anões, elfos e dragões.\n   Talvez seja por causa de suas vidas mais curtas que eles se esforcem para alcançar o máximo que podem nos anos que têm. Ou talvez eles sintam que têm algo a provar às raças mais antigas, e é por esta razão que eles constroem seus poderosos impérios através  da conquista e do comércio.\n   O que quer que os motive, os  humanos são os inovadores, os realizadores e os pioneiros dos mundos.')
 
-            $('#guerreiro').attr('disabled', false)
-            $('#bardo').attr('disabled', false)
-            $('#druida').attr('disabled', true)
-            $('#monge').attr('disabled', false)
-            $('#sacerdote').attr('disabled', false)
-            $('#mago').attr('disabled', false)
-            $('#bruxo').attr('disabled', false)
-            $('#atirador').attr('disabled', false)
-            $('#ladino').attr('disabled', false)
-            $('#paladino').attr('disabled', false)
-            $('#xama').attr('disabled', true)
+            $('#guerreiro').show()
+            $('#bardo').show()
+            $('#druida').hide()
+            $('#monge').show()
+            $('#sacerdote').show()
+            $('#mago').show()
+            $('#bruxo').hide()
+            $('#atirador').show()
+            $('#ladino').show()
+            $('#paladino').show()
+            $('#xama').hide()
+
+            $('#classe').show()
+            $('#eclasse').show()
         break
         case 'elfo':
             suaRaça = 'Elfo'
 
-            $('#guerreiro').attr('disabled', false)
-            $('#bardo').attr('disabled', false)
-            $('#druida').attr('disabled', false)
-            $('#monge').attr('disabled', false)
-            $('#sacerdote').attr('disabled', false)
-            $('#mago').attr('disabled', false)
-            $('#bruxo').attr('disabled', true)
-            $('#atirador').attr('disabled', false)
-            $('#ladino').attr('disabled', false)
-            $('#paladino').attr('disabled', true)
-            $('#xama').attr('disabled', true)
+            $('#descriçãoRaça').show()
+            $('#tituloRaça').text('Elfo')
+            $('#tituloRaça').css('right', '42.2%')
+            $('#descriçãoRaça').text( '   Elfos são um povo mágico de graça sobrenatural, vivendo no mundo sem pertencer inteiramente à ele.\n   Eles vivem em lugares de beleza etérea, no meio de antigas florestas ou em torres prateadas brilhando com luz feérica, onde uma música suave ecoa através do ar e fragrâncias suaves flutuam na brisa.\n   Elfos amam a natureza e a magia, a arte e o estudo, a música e a poesia, e as coisas boas do mundo')
+
+
+            $('#guerreiro').show()
+            $('#bardo').show()
+            $('#druida').show()
+            $('#monge').show()
+            $('#sacerdote').show()
+            $('#mago').show()
+            $('#bruxo').hide()
+            $('#atirador').show()
+            $('#ladino').show()
+            $('#paladino').hide()
+            $('#xama').hide()
+
+            $('#classe').show()
+            $('#eclasse').show()
         break
         case 'meioelfo':
             suaRaça = 'Meio-Elfo'
 
-            $('#guerreiro').attr('disabled', false)
-            $('#bardo').attr('disabled', false)
-            $('#druida').attr('disabled', true)
-            $('#monge').attr('disabled', false)
-            $('#sacerdote').attr('disabled', false)
-            $('#mago').attr('disabled', false)
-            $('#bruxo').attr('disabled', true)
-            $('#atirador').attr('disabled', false)
-            $('#ladino').attr('disabled', false)
-            $('#paladino').attr('disabled', false)
-            $('#xama').attr('disabled', true)
+            $('#descriçãoRaça').show()
+            $('#tituloRaça').text('Meio-Elfo')
+            $('#tituloRaça').css('right', '42.2%')
+            $('#descriçãoRaça').text( '   Vagando entre dois mundos mas, na verdade, não pertencendo a nenhum dos dois, meio-elfos combinam o que alguns dizem ser as melhores qualidades dos seus parentes elfos e humanos: a curiosidade, inventividade e ambição humanas temperadas pelos sensos refinados, amor a natureza e gostos artísticos dos elfos.\n   Alguns meio-elfos vivem entre os humanos, separados por suas diferenças emocionais e físicas, vendo seus amigos e amores envelhecer enquanto o tempo malmente os toca. Outros vivem entre os elfos, crescendo impacientes àmedida que atingem a maturidade nos reinos élficos intermináveis, enquanto seus amigos continuam a viver como crianças.\n   Muitos meio-elfos, incapazes de se encaixar em nenhuma dessas sociedades, escolhem uma vida solitária, vagando ou se juntando a outrosdesafortunados e adentrando uma vida de aventura')
+
+
+            $('#guerreiro').show()
+            $('#bardo').show()
+            $('#druida').show()
+            $('#monge').show()
+            $('#sacerdote').show()
+            $('#mago').show()
+            $('#bruxo').hide()
+            $('#atirador').show()
+            $('#ladino').show()
+            $('#paladino').show()
+            $('#xama').hide()
+
+            $('#classe').show()
+            $('#eclasse').show()
         break
         case 'meioorc':
             suaRaça = 'Meio-Orc'
 
-            $('#guerreiro').attr('disabled', false)
-            $('#bardo').attr('disabled', true)
-            $('#druida').attr('disabled', true)
-            $('#monge').attr('disabled', false)
-            $('#sacerdote').attr('disabled', false)
-            $('#mago').attr('disabled', true)
-            $('#bruxo').attr('disabled', true)
-            $('#atirador').attr('disabled', false)
-            $('#ladino').attr('disabled', true)
-            $('#paladino').attr('disabled', false)
-            $('#xama').attr('disabled', true)
+            $('#guerreiro').show()
+            $('#bardo').hide()
+            $('#druida').hide()
+            $('#monge').show()
+            $('#sacerdote').show()
+            $('#mago').hide()
+            $('#bruxo').hide()
+            $('#atirador').show()
+            $('#ladino').hide()
+            $('#paladino').show()
+            $('#xama').hide()
+
+            $('#classe').show()
+            $('#eclasse').show()
         break
         case 'anao':
             suaRaça = 'Anão'
 
-            $('#guerreiro').attr('disabled', false)
-            $('#bardo').attr('disabled', true)
-            $('#druida').attr('disabled', true)
-            $('#monge').attr('disabled', true)
-            $('#sacerdote').attr('disabled', false)
-            $('#mago').attr('disabled', false)
-            $('#bruxo').attr('disabled', false)
-            $('#atirador').attr('disabled', false)
-            $('#ladino').attr('disabled', true)
-            $('#paladino').attr('disabled', false)
-            $('#xama').attr('disabled', false)
+            $('#guerreiro').show()
+            $('#bardo').hide()
+            $('#druida').hide()
+            $('#monge').hide()
+            $('#sacerdote').show()
+            $('#mago').show()
+            $('#bruxo').show()
+            $('#atirador').show()
+            $('#ladino').hide()
+            $('#paladino').show()
+            $('#xama').show()
+
+            $('#classe').show()
+            $('#eclasse').show()
         break
         case 'gnomo':
             suaRaça = 'Gnomo'
 
-            $('#guerreiro').attr('disabled', false)
-            $('#bardo').attr('disabled', true)
-            $('#druida').attr('disabled', true)
-            $('#monge').attr('disabled', true)
-            $('#sacerdote').attr('disabled', false)
-            $('#mago').attr('disabled', false)
-            $('#bruxo').attr('disabled', false)
-            $('#atirador').attr('disabled', false)
-            $('#ladino').attr('disabled', false)
-            $('#paladino').attr('disabled', true)
-            $('#xama').attr('disabled', true)
+            $('#guerreiro').show()
+            $('#bardo').hide()
+            $('#druida').hide()
+            $('#monge').hide()
+            $('#sacerdote').show()
+            $('#mago').show()
+            $('#bruxo').show()
+            $('#atirador').show()
+            $('#ladino').show()
+            $('#paladino').hide()
+            $('#xama').hide()
+
+            $('#classe').show()
+            $('#eclasse').show()
         break
         default:
             suaRaça = ''
@@ -132,68 +171,77 @@ function setEscolha(){
             $('#ladino').attr('disabled', true)
             $('#paladino').attr('disabled', true)
             $('#xama').attr('disabled', true)
+
+            $('#classe').hide()
+            $('#eclasse').hide()
+            $('#status-personagem').hide()
     }
+}
+
+function setClasse(){
+    let escolherClasse = classe.value
 
     switch(escolherClasse){
         case 'guerreiro':
             suaClasse = 'Guerreiro'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'bardo':
             suaClasse = 'Bardo'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'druida':
             suaClasse = 'Druída'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'monge':
             suaClasse = 'Monge'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'paladino':
             suaClasse = 'Paladino'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'atirador':
             suaClasse = 'Atirador'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'sacerdote':
             suaClasse = 'Sacerdote'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'bruxo':
             suaClasse = 'Bruxo'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'mago':
             suaClasse = 'Mago'
 
-            $('.status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'ladino':
             suaClasse = 'Ladino'
 
-            $('#status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         case 'xama':
             suaClasse = 'Xamã'
 
-            $('#status-personagem').addClass = ('display','block')
+            $('#status-personagem').show()
             break
         default:
             suaClasse = ''
 
-            $('#status-personagem').addClass = ('display','none')
+            $('#botao-proximo-formulario').hide()
+            $('#status-personagem').hide()
     }
 }
 
@@ -614,32 +662,32 @@ function randomizarStatusPrimeiro(){
             proximo = 1
         } else{
 
-        document.getElementById('força').value = "0"
-        document.getElementById('destreza').value = "0"
-        document.getElementById('contituicao').value = "0"
-        document.getElementById('inteligencia').value = "0"
-        document.getElementById('sabedoria').value = "0"
-        document.getElementById('carisma').value = "0"
+            document.getElementById('força').value = "0"
+            document.getElementById('destreza').value = "0"
+            document.getElementById('contituicao').value = "0"
+            document.getElementById('inteligencia').value = "0"
+            document.getElementById('sabedoria').value = "0"
+            document.getElementById('carisma').value = "0"
         
-        proximo = 0
+            proximo = 0
     }
         
-    switch(proximo){
-        case 1:
-            document.getElementById('raça').disabled = true
-            document.getElementById('classe').disabled = true
-            document.getElementById('botao-proximo-formulario').disabled = false
-            calcularVida = 1
-            break
-        default:
-            document.getElementById('raça').disabled = false
-            document.getElementById('classe').disabled = false
-            document.getElementById('botao-proximo-formulario').disabled = true
-    }
-    switch(calcularVida){
-        case 1:
-        document.getElementById('ponto-de-vida').value = Math.floor(Math.random() * (100 - document.getElementById('contituicao').value) + document.getElementById('contituicao').value)
-    }
+        switch(proximo){
+            case 1:
+                document.getElementById('raça').disabled = true
+                document.getElementById('classe').disabled = true
+                document.getElementById('botao-proximo-formulario').disabled = false
+                calcularVida = 1
+                break
+            default:
+                document.getElementById('raça').disabled = false
+                document.getElementById('classe').disabled = false
+                document.getElementById('botao-proximo-formulario').disabled = true
+        }
+        switch(calcularVida){
+            case 1:
+            document.getElementById('ponto-de-vida').value = Math.floor(Math.random() * (100 - document.getElementById('contituicao').value) + document.getElementById('contituicao').value)
+        }
 }
 
 function proximoCriar(){
@@ -653,8 +701,13 @@ function proximoCriar(){
     pv = document.getElementById('ponto-de-vida').value
     console.log(seuNome, suaRaça, suaClasse, força, destreza, constituicao, inteligencia, sabedoria, carisma, pv)
 
+    if($('#nome').val().length >= 3){
     document.getElementById('segundo-formulario').style.display = 'block'
     document.getElementById('primeiro-formulario').style.display = 'none'
+    $('#erro-segundo-formulario').hide()
+    } else{
+        $('#erro-segundo-formulario').text ('O nome deve conter 3 ou mais caracteres.')
+    }
 }
 
 function randomizarStatusSegundo(){
