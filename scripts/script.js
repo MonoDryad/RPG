@@ -6,13 +6,16 @@
 
 let seuNome, suaRaça, suaClasse, seuAlinhamento
 let força, destreza, constituicao, inteligencia, sabedoria, carisma, pv
-let velocidade, iniciativa                                                  
+let velocidade, iniciativa          
+
+
+let proximo, calcularVida
 
 let escolhaDaHistoria, momentoHistoria
 
-let raça = document.querySelector('#raça')
-let classe = document.querySelector('#classe')
-let alinhamento = document.querySelector('#alinhamento')
+let raça = $("#raça").get(0)
+let classe = $("#classe").get(0)
+let alinhamento = $("#alinhamento").get(0)
 
 
 raça.addEventListener('change', setEscolha)
@@ -73,132 +76,130 @@ function setEscolha(){
         case 'meioorc':
             suaRaça = 'Meio-Orc'
 
-            document.getElementById('guerreiro').disabled = false
-            document.getElementById('bardo').disabled = true
-            document.getElementById('druida').disabled = true
-            document.getElementById('monge').disabled = false
-            document.getElementById('sacerdote').disabled = false
-            document.getElementById('mago').disabled = true
-            document.getElementById('bruxo').disabled = true
-            document.getElementById('atirador').disabled = false
-            document.getElementById('ladino').disabled = true
-            document.getElementById('paladino').disabled = false
-            document.getElementById('xama').disabled = true
+            $('#guerreiro').attr('disabled', false)
+            $('#bardo').attr('disabled', true)
+            $('#druida').attr('disabled', true)
+            $('#monge').attr('disabled', false)
+            $('#sacerdote').attr('disabled', false)
+            $('#mago').attr('disabled', true)
+            $('#bruxo').attr('disabled', true)
+            $('#atirador').attr('disabled', false)
+            $('#ladino').attr('disabled', true)
+            $('#paladino').attr('disabled', false)
+            $('#xama').attr('disabled', true)
         break
         case 'anao':
             suaRaça = 'Anão'
 
-            document.getElementById('guerreiro').disabled = false
-            document.getElementById('bardo').disabled = true
-            document.getElementById('druida').disabled = true
-            document.getElementById('monge').disabled = true
-            document.getElementById('sacerdote').disabled = false
-            document.getElementById('mago').disabled = false
-            document.getElementById('bruxo').disabled = false
-            document.getElementById('atirador').disabled = false
-            document.getElementById('ladino').disabled = false
-            document.getElementById('paladino').disabled = false
-            document.getElementById('xama').disabled = false
+            $('#guerreiro').attr('disabled', false)
+            $('#bardo').attr('disabled', true)
+            $('#druida').attr('disabled', true)
+            $('#monge').attr('disabled', true)
+            $('#sacerdote').attr('disabled', false)
+            $('#mago').attr('disabled', false)
+            $('#bruxo').attr('disabled', false)
+            $('#atirador').attr('disabled', false)
+            $('#ladino').attr('disabled', true)
+            $('#paladino').attr('disabled', false)
+            $('#xama').attr('disabled', false)
         break
         case 'gnomo':
             suaRaça = 'Gnomo'
 
-            document.getElementById('guerreiro').disabled = false
-            document.getElementById('bardo').disabled = true
-            document.getElementById('druida').disabled = true
-            document.getElementById('monge').disabled = true
-            document.getElementById('sacerdote').disabled = false
-            document.getElementById('mago').disabled = false
-            document.getElementById('bruxo').disabled = false
-            document.getElementById('atirador').disabled = true
-            document.getElementById('ladino').disabled = false
-            document.getElementById('paladino').disabled = true
-            document.getElementById('xama').disabled = true
+            $('#guerreiro').attr('disabled', false)
+            $('#bardo').attr('disabled', true)
+            $('#druida').attr('disabled', true)
+            $('#monge').attr('disabled', true)
+            $('#sacerdote').attr('disabled', false)
+            $('#mago').attr('disabled', false)
+            $('#bruxo').attr('disabled', false)
+            $('#atirador').attr('disabled', false)
+            $('#ladino').attr('disabled', false)
+            $('#paladino').attr('disabled', true)
+            $('#xama').attr('disabled', true)
         break
         default:
             suaRaça = ''
 
-            document.getElementById('guerreiro').disabled = true
-            document.getElementById('bardo').disabled = true
-            document.getElementById('druida').disabled = true
-            document.getElementById('monge').disabled = true
-            document.getElementById('sacerdote').disabled = true
-            document.getElementById('mago').disabled = true
-            document.getElementById('bruxo').disabled = true
-            document.getElementById('atirador').disabled = true
-            document.getElementById('ladino').disabled = true
-            document.getElementById('paladino').disabled = true
-            document.getElementById('xama').disabled = true
+            $('#guerreiro').attr('disabled', true)
+            $('#bardo').attr('disabled', true)
+            $('#druida').attr('disabled', true)
+            $('#monge').attr('disabled', true)
+            $('#sacerdote').attr('disabled', true)
+            $('#mago').attr('disabled', true)
+            $('#bruxo').attr('disabled', true)
+            $('#atirador').attr('disabled', true)
+            $('#ladino').attr('disabled', true)
+            $('#paladino').attr('disabled', true)
+            $('#xama').attr('disabled', true)
     }
 
     switch(escolherClasse){
         case 'guerreiro':
             suaClasse = 'Guerreiro'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'bardo':
             suaClasse = 'Bardo'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'druida':
             suaClasse = 'Druída'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'monge':
             suaClasse = 'Monge'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'paladino':
             suaClasse = 'Paladino'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'atirador':
             suaClasse = 'Atirador'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'sacerdote':
             suaClasse = 'Sacerdote'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'bruxo':
             suaClasse = 'Bruxo'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'mago':
             suaClasse = 'Mago'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('.status-personagem').addClass = ('display','block')
             break
         case 'ladino':
             suaClasse = 'Ladino'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('#status-personagem').addClass = ('display','block')
             break
         case 'xama':
             suaClasse = 'Xamã'
 
-            document.getElementById('status-personagem').style.display = 'block'
+            $('#status-personagem').addClass = ('display','block')
             break
         default:
             suaClasse = ''
 
-            document.getElementById('status-personagem').style.display = 'none'
+            $('#status-personagem').addClass = ('display','none')
     }
 }
 
 function randomizarStatusPrimeiro(){
     document.getElementById('botao-randomizar').disabled = true
 
-    let proximo = 0
-    let calcularVida = 0
 
         if(suaRaça == 'Humano' && suaClasse == 'Guerreiro'){
 
