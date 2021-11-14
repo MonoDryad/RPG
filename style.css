@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Augusta;
+  src: url(./fonts/Augusta.ttf);
+}
+
 body{
   color: wheat;
   background-color: #14141d;
@@ -96,8 +101,7 @@ input[type="radio" i] {
 }
 
 #criacao-personagem{
-  color: black;
-  font-weight: bolder;
+  color: rgb(0, 0, 0);
   background-image: url(./imagens/criador_de_personagem.jpg);
   padding: 9px;
   border-radius: 4px;
@@ -107,6 +111,10 @@ input[type="radio" i] {
   bottom: 3%;
   left: 2%;
   right: 2%;
+}
+
+#criacao-personagem #titulo{
+  color: rgb(28, 21, 0);
 }
 
 #primeiro-formulario select#raça{
@@ -129,17 +137,17 @@ input[type="radio" i] {
   position: absolute;
   top: 22.5%;
   left: 6%;
-}
-
-#primeiro-formulario input#nome:hover{
-  color: white;
-  background-color: black;
-  border-style: none;
   outline: 0;
 }
 
+#primeiro-formulario input#nome:hover{
+  border-style: none;
+  outline: 0;
+  text-decoration: underline;
+}
+
 #primeiro-formulario #eclasse{
-  color: black;
+  color: rgb(0, 0, 0);
   border-style: none;
   font-family: Augusta;
   font-size: 24px;
@@ -169,7 +177,7 @@ input[type="radio" i] {
 #status-personagem{
   position: absolute;
   top: 40%;
-  bottom: 40%
+  bottom: 40%;
 }
 
 #Status{
@@ -184,37 +192,43 @@ input[type="radio" i] {
 
 #status-personagem #destrezalbl{
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 0%;
 }
 
 #status-personagem #constituicaolbl{
   position: absolute;
-  top: 80%;
+  top: 90%;
   left: 0%;
 }
 
 #status-personagem #inteligencialbl{
   position: absolute;
-  top: 100%;
+  top: 115%;
   left: 0%;
 }
 
 #status-personagem #sabedorialbl{
   position: absolute;
-  top: 120%;
+  top: 140%;
   left: 0%;
 }
 
 #status-personagem #carismalbl{
   position: absolute;
-  top: 140%;
+  top: 165%;
+  left: 0%;
+}
+
+#status-personagem #ptotallbl{
+  position: absolute;
+  top: 190%;
   left: 0%;
 }
 
 #status-personagem #pvlbl{
   position: absolute;
-  top: 160%;
+  top: 215%;
   left: 0%;
 }
 
@@ -240,44 +254,50 @@ input[type="radio" i] {
 #status-personagem #força{
   position: absolute;
   top: 40%;
-  left: 43%;
+  left: 55%;
 }
 
 
 #status-personagem #destreza{
   position: absolute;
-  top: 60%;
-  left: 43%;
+  top: 65%;
+  left: 55%;
 }
 
 #status-personagem #contituicao{
   position: absolute;
-  top: 80%;
-  left: 43%;
+  top: 90%;
+  left: 55%;
 }
 
 #status-personagem #inteligencia{
   position: absolute;
-  top: 100%;
-  left: 43%;
+  top: 115%;
+  left: 55%;
 }
 
 #status-personagem #sabedoria{
   position: absolute;
-  top: 120%;
-  left: 43%;
+  top: 140%;
+  left: 55%;
 }
 
 #status-personagem #carisma{
   position: absolute;
-  top: 140%;
-  left: 43%;
+  top: 165%;
+  left: 55%;
+}
+
+#status-personagem #pontos{
+  position: absolute;
+  top: 190%;
+  left: 55%;
 }
 
 #status-personagem #ponto-de-vida{
   position: absolute;
-  top: 160%;
-  left: 43%;
+  top: 215%;
+  left: 55%;
 }
 
 #descriçãoRaça{
@@ -291,7 +311,6 @@ input[type="radio" i] {
   background-color: transparent;
   color: black;
   outline: none;
-  font-weight: bolder;
   border: none;
 }
 
@@ -306,7 +325,6 @@ input[type="radio" i] {
   background-color: transparent;
   color: black;
   outline: none;
-  font-weight: bolder;
   border: none;
 }
 
@@ -326,4 +344,22 @@ input[type="radio" i] {
   font-size: 40px;
   font-weight: bolder;
   text-decoration: underline;
+}
+
+#erro-segundo-formulario{
+  position: absolute;
+  top: 95%;
+  left: 1%;
+  color: red;
+}
+
+#botao-proximo-formulario{
+  position: absolute;
+  top: 245%;
+  left: -2%;
+  background-color: transparent;
+  border: none;
+  font-family: Augusta;
+  font-size: 30px;
+  cursor: pointer;
 }
