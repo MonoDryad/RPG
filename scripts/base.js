@@ -217,15 +217,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').hide()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -248,15 +247,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').hide()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -279,15 +277,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').hide()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -310,15 +307,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').hide()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -343,15 +339,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').hide()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -374,15 +369,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').hide()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -406,15 +400,14 @@ function setClasse(){
             $('#rogueicon').hide()
             $('#warlockicon').show()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#botao-proximo-formulario').show()
 
@@ -439,15 +432,14 @@ function setClasse(){
 
             $('#botao-proximo-formulario').show()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#descriçãoClasse').show()
             $('#tituloClasse').text('Bruxo')
@@ -471,15 +463,14 @@ function setClasse(){
 
             $('#botao-proximo-formulario').show()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
 
             $('#descriçãoClasse').show()
             $('#tituloClasse').text('Mago')
@@ -509,15 +500,14 @@ function setClasse(){
 
             $('#status-personagem').show()
 
-            $('#pontos').val(0)
-            $('#nome').val(0)
-            $('#força').val(0)
-            $('#destreza').val(0)
-            $('#contituicao').val(0)
-            $('#inteligencia').val(0)
-            $('#sabedoria').val(0)
-            $('#carisma').val(0)
-            $('#ponto-de-vida').val(0)
+            $('#pontos').val('')
+            $('#força').val('')
+            $('#destreza').val('')
+            $('#contituicao').val('')
+            $('#inteligencia').val('')
+            $('#sabedoria').val('')
+            $('#carisma').val('')
+            $('#ponto-de-vida').val('')
             
             break
         default:
@@ -535,6 +525,7 @@ function setClasse(){
 }
 
 function proximoCriar(){
+
     seuNome = $('#nome').val()
     força = $('#força').val()
     destreza = $('#destreza').val()
@@ -546,35 +537,34 @@ function proximoCriar(){
     console.log(seuNome, suaRaça, suaClasse, força, destreza, constituicao, inteligencia, sabedoria, carisma, pv)
 
     if($('#nome').val().length >= 3 && $('#nome').val().length <= 16 && força >= 1 && pv >=2){
-    document.getElementById('segundo-formulario').style.display = 'block'
-    document.getElementById('primeiro-formulario').style.display = 'none'
+    $('#segundo-formulario').css('display', 'block')
+    $('#primeiro-formulario').css('display', 'none')
     $('#erro-segundo-formulario').hide()
-    } else if(força <= 1 && pv <=2){
-        $('#erro-segundo-formulario').text ('Randomize o status!')
+    $('#imagens').hide()
+    } else if(força <= 1 && pv < 2){
+        $('#erro-segundo-formulario').show()
+        $('#erro-segundo-formulario').text ('Randomize os status!')
     } else{
         $('#erro-segundo-formulario').text ('O campo de Nome deve conter entre 3 a 16 caracteres.')
+        $('#erro-segundo-formulario').show()
     }
 }
 
 function randomizarStatusSegundo(){
     if(suaRaça == 'Anão' || suaRaça == 'Gnome'){
-        document.getElementById('velocidade').value = 25
-        velocidade = document.getElementById('velocidade').value
+        $('#velocidade').val(25)
     }else{
-        document.getElementById('velocidade').value = 30
-        velocidade = document.getElementById('velocidade').value
+        $('#velocidade').val(30)
     }
 
-    let iniciativaCalculo = Math.floor(Math.random() * 20)
-    iniciativa = iniciativaCalculo + parseFloat(destreza)
-    document.getElementById('iniciativa').value = iniciativa
-    document.getElementById('alinhamento').disabled = false
-    document.getElementById('randomizar2').disabled = true
-    console.log(seuNome, suaRaça, suaClasse, força, destreza, constituicao, inteligencia, sabedoria, carisma, pv, iniciativa, velocidade)
+    iniciativa = Math.floor(Math.random() * 20) + parseFloat(destreza)
+    $('#iniciativa').val(iniciativa)
+    $('#alinhamento').attr('disabled', false)
+    $('#randomizar2').attr('disabled', true)
 }
 
 function setAlinhamento(){
-    document.getElementById('começarHistoria').disabled = false
+    $('#começarHistoria').attr('disabled', false)
 
     let eAlinhamento = alinhamento.value
     switch(eAlinhamento){
@@ -609,7 +599,6 @@ function setAlinhamento(){
             seuAlinhamento = "Chaotic evil"
             break
     }
-    console.log(seuAlinhamento)
 }
 
 function começar(){
@@ -620,39 +609,45 @@ function começar(){
     document.getElementById('ultimaverificação').style.display = "block"
     document.getElementById('voltar').style.display = "block"
 
-    document.getElementById('texto-personagem-status').innerHTML = "Personagem \n Nome: " + seuNome + "\n Raça: " + suaRaça + "\n Classe: " + suaClasse + "\n Força: " + força + "\n Destreza: " + ""
-    + destreza + "\n Constituição: " + constituicao + "\n Inteligência: " + inteligencia + "\n Sabedoria: " + sabedoria + "\n Carisma: " + carisma + "\n Pontos de Vida: " + pv + ""
-    + "\n Velocidade: " + velocidade + "\n Iniciativa: " + iniciativa + "\n Alinhamento: " + seuAlinhamento
+    $('#texto-personagem-status').text(`Perfil\nNome: ${seuNome}\nRaça: ${suaRaça}\nClasse: ${suaClasse}\nAlinhamento: ${seuAlinhamento}\n\nStatus\nForça: ${força}\nDestreza: ${destreza}\nConstituição: ${constituicao}\nInteligência: ${inteligencia}\nSabedoria: ${sabedoria}\nCarisma: ${carisma}\nTotal: ${$('#pontos').val()}\nVida: ${pv}\nVelocidade: ${$('#velocidade').val()}\nIniciativa: ${iniciativa}`)
 
 }
 
 function voltar(){
-    força = '', destreza = '', constituicao = '', inteligencia = '', sabedoria = '', carisma = '', pv = '', iniciativa = '', velocidade = ''
-    console.log(força, destreza, constituicao, inteligencia, sabedoria, carisma, pv, iniciativa, velocidade)
+    força = '', destreza = '', constituicao = '', inteligencia = '', sabedoria = '', carisma = '', pv = '', iniciativa = '', velocidade = '', pontos = ''
 
-    document.getElementById('força').value = força
-    document.getElementById('destreza').value = destreza 
-    document.getElementById('contituicao').value = constituicao
-    document.getElementById('inteligencia').value = inteligencia
-    document.getElementById('sabedoria').value = sabedoria
-    document.getElementById('carisma').value = carisma
-    document.getElementById('ponto-de-vida').value = pv
+    $('#força').val(força)
+    $('#destreza').val(destreza)
+    $('#contituicao').val(constituicao)
+    $('#inteligencia').val(inteligencia)
+    $('#sabedoria').val(sabedoria)
+    $('#carisma').val(carisma)
+    $('#pontos').val(pontos)
+    $('#ponto-de-vida').val(pv)
+    $('#iniciativa').val(iniciativa)
+    $('#velocidade').val(velocidade)
 
-    document.getElementById('primeiro-formulario').style.display = "block"
-    document.getElementById('status-personagem').style.display = "none"
+    $('#primeiro-formulario').show()
+    $('#stats-personagem').hide()
 
-    document.getElementById('texto-personagem-status').style.display = "none"
-    document.getElementById('ultimaverificação').style.display = "none"
-    document.getElementById('voltar').style.display = "none"
+    $('#texto-personagem-status').hide()
+    $('#ultimaverificação').hide()
+    $('#voltar').hide()
 
-    document.getElementById('raça').disabled = false
-    document.getElementById('classe').disabled = false
-    document.getElementById('botao-randomizar').disabled = false
-    document.getElementById('botao-proximo-formulario').disabled = true
-    
-    document.getElementById('alinhamento').disabled = true
-    document.getElementById('randomizar2').disabled = false
-    document.getElementById('titulo').style.display = "block"
+    $('#raça').attr('disabled', false)
+    $('#classe').attr('disabled', false)
+    $('#botao-randomizar').attr('disabled', false)
+    $('#botao-proximo-formulario').attr('disabled', true)
+
+    $('#alinhamento').attr('disabled', true)
+    $('#randomizar2').attr('disabled', false)
+    $('#titulo').show()
+
+
+    raça.selectedIndex = 0
+    classe.selectedIndex = 0
+    setClasse()
+    setRaça()
 }
 
 function ultimaverificação(){

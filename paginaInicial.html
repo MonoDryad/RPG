@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styles/style-principal.css">
+    <!-- <link rel="stylesheet" href="./styles/style-1080p.css">
+    <link rel="stylesheet" href="./styles/style-900p.css"> -->
+    <link rel="icon" href="./styles/imagens/Logo.png" type="image/png">
     <title>RPG</title>
 </head>
 <body>
     <header>
-        <img src="./imagens/Logo.png" alt="Dungeons & Dragons" style="width: 140px;">
+        <img id="dnd" src="./styles/imagens/Logo.png" alt="Dungeons & Dragons">
     </header>
     <div class="criação-personagem" id="criacao-personagem">
-        <!-- Divisão das imagens -->
         <div id="imagens">
-            <img id="bardoicon" src="./imagens/classes/bard.png">
-            <img id="druidaicon" src="./imagens/classes/druid.png">
-            <img id="warlockicon" src="./imagens/classes/warlock.png">
-            <img id="warrioricon" src="./imagens/classes/warrior.png">
-            <img id="monkicon" src="./imagens/classes/monk.png">
-            <img id="paladicon" src="./imagens/classes/paladin.png">
-            <img id="rogueicon" src="./imagens/classes/rogue.png">
-            <img id="huntericon" src="./imagens/classes/hunter.png">
+            <img id="bardoicon" src="./styles/imagens/classes/bard.png">
+            <img id="druidaicon" src="./styles/imagens/classes/druid.png">
+            <img id="warlockicon" src="./styles/imagens/classes/warlock.png">
+            <img id="warrioricon" src="./styles/imagens/classes/warrior.png">
+            <img id="monkicon" src="./styles/imagens/classes/monk.png">
+            <img id="paladicon" src="./styles/imagens/classes/paladin.png">
+            <img id="rogueicon" src="./styles/imagens/classes/rogue.png">
+            <img id="huntericon" src="./styles/imagens/classes/hunter.png">
         </div>
             <h1 id="titulo">Criação de Personagem</h1>
         <div id="primeiro-formulario" class="primeiro-formulario" style="display: block;">
             <div class="informação">
-                <label>Nome </label>
+                <label id="nOme">Nome </label>
                 <input autocomplete="off" type="text" class="nome" id="nome" name="nome">
                 <button id="NomeAleatorio" onclick="geraraAleatorio()">Gerar Nome</button>
                 <button id="PersonagemAleatorio" onclick="gerarPersonagem()">Gerar Personagem</button>

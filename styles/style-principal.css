@@ -1,22 +1,36 @@
 @font-face {
-  font-family: Augusta;
-  src: url(./fonts/Augusta.ttf);
+  font-family: Land;
+  src: url(./fonts/Land.otf);
 }
-
+#dnd{
+  width: 11vw;
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
+}
 body{
   color: wheat;
-  background-color: #14141d;
-  font-family: Augusta;
+  background-color: #2d2d43;
+  font-family: Land;
 }
 
 textarea{
+  resize: none;
+}
+
+#texto-personagem-status{
   width: 370px;
-  height: 295px;
-  color: white;
-  font-size: 16px;
-  background-color: #11141d;
+  height: 385px;
+  color: black;
+  font-family: Land;
+  font-size: 18px;
+  background-color: transparent;
   border: 2px grey solid;
   border-radius: 10px;
+  position: absolute;
+  top: 12%;
+  left: 4%;
+  border: 0;
 }
 .status-personagem{
 display: none;
@@ -26,8 +40,18 @@ display: none;
   width: 50px;
 }
 
-.nome{
-  width: 180px;
+label#eraça{
+  position: absolute;
+  top: 11.5vw;
+  left: 0.5%;
+  font: 1vw;
+}
+
+label#nOme{
+  position: absolute;
+  top: 9.4vw;
+  left: 0.5%;
+  font: 1vw;
 }
 
 input[type="radio" i] {
@@ -103,40 +127,50 @@ input[type="radio" i] {
 #criacao-personagem{
   color: rgb(0, 0, 0);
   background-image: url(./imagens/criador_de_personagem.jpg);
-  padding: 9px;
-  border-radius: 4px;
+  background-size: 100vw;
+  padding: 0.5vw;
+  border-radius: 7px;
+  border-radius: 1vw;
   font-size: 24px;
+  font-size: 1vw;
   position: absolute;
-  top: 10%;
-  bottom: 3%;
-  left: 2%;
-  right: 2%;
+  top: 5vw;
+  bottom: 1vw;
+  left: 1vw;
+  right: 1vw;
+  font-size: 1.7vw;
 }
 
-#criacao-personagem #titulo{
+#titulo{
   color: rgb(28, 21, 0);
+  position: absolute;
+  top: -1vw;
+  font-size: 5vw;
+  left: 1vw;
 }
 
 #primeiro-formulario select#raça{
   color: black;
   background-color: transparent;
   border-style: none;
-  font-family: Augusta;
+  font-family: Land;
   font-size: 24px;
+  font-size: 1.7vw;
   position: absolute;
-  top: 27.6%;
-  left: 6%;
+  top: 11.55vw;
+  left: 5vw;
 }
 
 #primeiro-formulario input#nome{
   color: black;
   background-color: transparent;
   border-style: none;
-  font-family: Augusta;
+  font-family: Land;
   font-size: 24px;
+  font-size: 1.7vw;
   position: absolute;
-  top: 22.5%;
-  left: 6%;
+  top: 9.4vw;
+  left: 5vw;
   outline: 0;
 }
 
@@ -149,22 +183,24 @@ input[type="radio" i] {
 #primeiro-formulario #eclasse{
   color: rgb(0, 0, 0);
   border-style: none;
-  font-family: Augusta;
+  font-family: Land;
   font-size: 24px;
+  font-size: 1.7vw;
   position: absolute;
-  top: 32.5%;
-  left: 0.7%
+  top: 13.4vw;
+  left: 0.5vw;
 }
 
 #primeiro-formulario select#classe{
   color: black;
   background-color: transparent;
   border-style: none;
-  font-family: Augusta;
+  font-family: Land;
   font-size: 24px;
+  font-size: 1.7vw;
   position: absolute;
-  top: 32.5%;
-  left: 6%;
+  top: 13.4vw;
+  left: 5vw;
 }
 
 
@@ -176,68 +212,77 @@ input[type="radio" i] {
 
 #status-personagem{
   position: absolute;
-  top: 40%;
-  bottom: 40%;
+  top: 16vw;
+  left: 0.6vw;
 }
 
 #Status{
-  font-size: 30px;
+  font-size: 3vw;
+  position: absolute;
+  left: 1vw;
 }
 
 #status-personagem #forçalbl{
   position: absolute;
-  top: 40%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 3.5vw;
+  left: 0;
 }
 
 #status-personagem #destrezalbl{
   position: absolute;
-  top: 65%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 5.7vw;
+  left: 0;
 }
 
 #status-personagem #constituicaolbl{
   position: absolute;
-  top: 90%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 7.9vw;
+  left: 0;
 }
 
 #status-personagem #inteligencialbl{
   position: absolute;
-  top: 115%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 10.1vw;
+  left: 0;
 }
 
 #status-personagem #sabedorialbl{
   position: absolute;
-  top: 140%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 12.3vw;
+  left: 0;
 }
 
 #status-personagem #carismalbl{
   position: absolute;
-  top: 165%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 14.5vw;
+  left: 0;
 }
 
 #status-personagem #ptotallbl{
   position: absolute;
-  top: 190%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 16.7vw;
+  left: 0;
 }
 
 #status-personagem #pvlbl{
   position: absolute;
-  top: 215%;
-  left: 0%;
+  font-size: 2.3vw;
+  top: 18.9vw;
+  left: 0;
 }
 
 #status-personagem input{
   background-color: transparent;
-  font-family: Augusta;
+  font-family: Land;
   border: 0;
   text-align: right;
-  font-size: 20px;
 }
 
 #status-personagem input:hover{
@@ -253,61 +298,87 @@ input[type="radio" i] {
 
 #status-personagem #força{
   position: absolute;
-  top: 40%;
-  left: 55%;
+  top: 3.5vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 
 #status-personagem #destreza{
   position: absolute;
-  top: 65%;
-  left: 55%;
+  top: 5.7vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #status-personagem #contituicao{
   position: absolute;
-  top: 90%;
-  left: 55%;
+  top: 7.9vw;
+  font-size: 2.3vw;
+  left: 6.7vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #status-personagem #inteligencia{
   position: absolute;
-  top: 115%;
-  left: 55%;
+  top: 10.1vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #status-personagem #sabedoria{
   position: absolute;
-  top: 140%;
-  left: 55%;
+  top: 12.3vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #status-personagem #carisma{
   position: absolute;
-  top: 165%;
-  left: 55%;
+  top: 14.5vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #status-personagem #pontos{
   position: absolute;
-  top: 190%;
-  left: 55%;
+  top: 16.7vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #status-personagem #ponto-de-vida{
   position: absolute;
-  top: 215%;
-  left: 55%;
+  top: 18.9vw;
+  left: 6.7vw;
+  font-size: 2.3vw;
+  width: 4vw;
+  height: 2.8vw;
 }
 
 #descriçãoRaça{
   position: absolute;
   top: 10%;
-  right: 2.5%;
-  width: 580px;
-  height: 48%;
-  font-family: Augusta;
-  font-size: 20px;
+  left: 49.5vw;
+  right: 0vw;
+  bottom: 0vw;
+  width: 43.5vw;
+  height: 16.5vw;
+  font-family: Land;
+  font-size: 1.78vw;
   background-color: transparent;
   color: black;
   outline: none;
@@ -317,11 +388,12 @@ input[type="radio" i] {
 #descriçãoClasse{
   position: absolute;
   top: 65%;
-  right: 2.5%;
-  width: 580px;
+  left: 49.5vw;
+  width: 43.5vw;
   height: 29%;
-  font-family: Augusta;
+  font-family: Land;
   font-size: 20px;
+  font-size: 1.78vw;
   background-color: transparent;
   color: black;
   outline: none;
@@ -330,45 +402,61 @@ input[type="radio" i] {
 
 #tituloRaça{
   position: absolute;
-  top: 2%;
-  left: 52.5%;
+  top: 1vw;
+  left: 49.8vw;
+  right: 0vw;
+  bottom: 0vw;
   font-size: 40px;
+  font-size: 3.38vw;
   font-weight: bolder;
   text-decoration: underline;
 }
 
 #tituloClasse{
   position: absolute;
-  top: 57%;
-  left: 52.75%;
+  top: 23.5vw;
+  left: 49.8vw;
   font-size: 40px;
+  font-size: 3.38vw;
   font-weight: bolder;
   text-decoration: underline;
 }
 
 #erro-segundo-formulario{
   position: absolute;
-  top: 95%;
-  left: 1%;
+  top: 39.2vw;
+  left: 20vw;
   color: red;
+}
+
+#botao-randomizar{
+  position: absolute;
+  top: 0.6vw;
+  left: 10vw;
+  font-family: Land;
+  background: transparent;
+  border: 0;
+  width: 13.2vw;
+  font-size: 2.1vw;
+  cursor: pointer;
 }
 
 #botao-proximo-formulario{
   position: absolute;
-  top: 245%;
-  left: -2%;
+  top: 22vw;
+  left: 2.5vw;
   background-color: transparent;
   border: none;
-  font-family: Augusta;
-  font-size: 30px;
+  font-family: Land;
+  font-size: 2.5vw;
   cursor: pointer;
 }
 
 #bardoicon, #druidaicon, #warlockicon, #warrioricon, #monkicon, #paladicon, #rogueicon, #huntericon{
   position: absolute;
-  top: 57%;
-  right: 48%;
-  width: 3%;
+  top: 24vw;
+  right: 48vw;
+  width: 6vw;
   display:none;
 }
 
@@ -377,7 +465,7 @@ input[type="radio" i] {
   top: 23%;
   left: 20%;
   background-color: transparent;
-  font-family: Augusta;
+  font-family: Land;
   color: black;
   border: none;
   font-size: 18px;
@@ -386,7 +474,10 @@ input[type="radio" i] {
 
 #PersonagemAleatorio{
   position: absolute;
-  left: 25%
+  top: 1vw;
+  left: 20vw;
+  font-size: 1vw;
+  width: 10vw;
 }
 
 #NomeAleatorio{
@@ -394,3 +485,4 @@ input[type="radio" i] {
   left: 35%;
   
 }
+

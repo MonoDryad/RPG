@@ -1,0 +1,82 @@
+@media only screen and (min-width: 1500px){
+    body{
+        font-size: 35;
+    }
+
+    #descriçãoRaça{
+      width: 44vw;
+      height: 42%;
+      font-size: 1.9vw;
+    }
+    
+    #descriçãoClasse{
+  
+      width: 690px;
+      height: 36%;
+      font-size: 29px;
+    }
+
+    #Status{
+        font-size: 45px;
+      }
+
+    #criacao-personagem #titulo{
+        font-size: 104px;
+        position: absolute;
+        top: -7%
+    }
+
+    #primeiro-formulario select#raça{
+        font-size: 34px;
+        top: 26.9%;
+    }
+
+    #primeiro-formulario input#nome{
+        font-size: 34px;
+        position: absolute;
+        top: 21.5%;
+        left: 6%;
+        outline: 0;
+    }
+
+    label#nOme{
+        font-size: 34px;
+        position: absolute;
+        top: 21.6%;
+        left: 0.5%;
+        outline: 0;
+    }
+
+    label#eraça{
+        font-size: 34px;
+        top: 27%;
+        }
+
+    #primeiro-formulario input#nome:hover{
+        border-style: none;
+        outline: 0;
+        text-decoration: underline;
+    }
+
+    #primeiro-formulario #eclasse{
+        font-size: 34px;
+    }
+
+    #primeiro-formulario select#classe{
+        font-size: 34px;
+    }
+
+    #status-personagem, #status-personagem input{
+        font-size: 30px;
+    }
+    button#botao-proximo-formulario{
+        font-size: 55px
+    }
+    label#erro-segundo-formulario{
+        font-size: 45px;
+        left: 1%;
+        top: 15%;
+        color: rgb(226, 0, 0);
+        font-weight: 0;
+    }
+}
