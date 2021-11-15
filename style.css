@@ -331,7 +331,7 @@ input[type="radio" i] {
 #tituloRaça{
   position: absolute;
   top: 2%;
-  right: 40.5%;
+  left: 52.5%;
   font-size: 40px;
   font-weight: bolder;
   text-decoration: underline;
@@ -340,7 +340,7 @@ input[type="radio" i] {
 #tituloClasse{
   position: absolute;
   top: 57%;
-  right: 37%;
+  left: 52.75%;
   font-size: 40px;
   font-weight: bolder;
   text-decoration: underline;
@@ -362,4 +362,35 @@ input[type="radio" i] {
   font-family: Augusta;
   font-size: 30px;
   cursor: pointer;
+}
+
+#bardoicon, #druidaicon, #warlockicon, #warrioricon, #monkicon, #paladicon, #rogueicon, #huntericon{
+  position: absolute;
+  top: 57%;
+  right: 48%;
+  width: 3%;
+  display:none;
+}
+
+#biografia{
+  position: absolute;
+  top: 23%;
+  left: 20%;
+  background-color: transparent;
+  font-family: Augusta;
+  color: black;
+  border: none;
+  font-size: 18px;
+  height: 70%;
+}
+
+#PersonagemAleatorio{
+  position: absolute;
+  left: 25%
+}
+
+#NomeAleatorio{
+  position: absolute;
+  left: 35%;
+  
 }

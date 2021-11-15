@@ -12,30 +12,40 @@
         <img src="./imagens/Logo.png" alt="Dungeons & Dragons" style="width: 140px;">
     </header>
     <div class="criação-personagem" id="criacao-personagem">
-        <h1 id="titulo">Criação de Personagem</h1>
+        <!-- Divisão das imagens -->
+        <div id="imagens">
+            <img id="bardoicon" src="./imagens/classes/bard.png">
+            <img id="druidaicon" src="./imagens/classes/druid.png">
+            <img id="warlockicon" src="./imagens/classes/warlock.png">
+            <img id="warrioricon" src="./imagens/classes/warrior.png">
+            <img id="monkicon" src="./imagens/classes/monk.png">
+            <img id="paladicon" src="./imagens/classes/paladin.png">
+            <img id="rogueicon" src="./imagens/classes/rogue.png">
+            <img id="huntericon" src="./imagens/classes/hunter.png">
+        </div>
+            <h1 id="titulo">Criação de Personagem</h1>
         <div id="primeiro-formulario" class="primeiro-formulario" style="display: block;">
             <div class="informação">
-                <label>Nome </label><input autocomplete="off" type="text" class="nome" id="nome" name="nome">
+                <label>Nome </label>
+                <input autocomplete="off" type="text" class="nome" id="nome" name="nome">
+                <button id="NomeAleatorio" onclick="geraraAleatorio()">Gerar Nome</button>
+                <button id="PersonagemAleatorio" onclick="gerarPersonagem()">Gerar Personagem</button>
             </div>
-            <label id="eraça">Raça </label>
-
-            <label id="tituloRaça">Raça</label>
-            <textarea id="descriçãoRaça" readonly></textarea>
-            
+                <label id="eraça">Raça </label>
+                <label id="tituloRaça">Raça</label>
+                <textarea id="descriçãoRaça" readonly></textarea>
             <select id="raça" autocomplete="off">
-                <option value="Nenhum" id="Nenhum">Nenhum</option>
-                <option value="humano">Humano</option>
-                <option value="elfo">Elfo</option>
-                <option value="meioelfo">Meio-Elfo</option>
-                <option value="meioorc">Meio-Orc</option>
-                <option value="anao">Anão</option>
-                <option value="gnomo">Gnomo</option>
+                <option name="raçaEscolha" value="Nenhum" id="Nenhum">Nenhum</option>
+                <option name="raçaEscolha" value="humano">Humano</option>
+                <option name="raçaEscolha" value="elfo">Elfo</option>
+                <option name="raçaEscolha" value="meioelfo">Meio-Elfo</option>
+                <option name="raçaEscolha" value="meioorc">Meio-Orc</option>
+                <option name="raçaEscolha" value="anao">Anão</option>
+                <option name="raçaEscolha" value="gnomo">Gnomo</option>
             </select>
-            <label id="eclasse">Classe </label>
-
-            <label id="tituloClasse">Classe</label>
-            <textarea id="descriçãoClasse" readonly></textarea>
-
+                <label id="eclasse">Classe </label>
+                <label id="tituloClasse">Classe</label>
+                <textarea id="descriçãoClasse" readonly></textarea>
             <select id="classe" autocomplete="off">
                 <option value="nenhumclass" id="nenhumclass">Nenhum</option>
                 <option value="guerreiro" id="guerreiro">Guerreiro</option>
@@ -49,6 +59,7 @@
                 <option value="mago" id="mago">Mago</option>
                 <option value="ladino" id="ladino">Ladino</option>
             </select>
+            <textarea id="biografia" placeholder="Sua Biografia! (Opcional)"></textarea>
             <div class="status-personagem" id="status-personagem">
                 <label id='Status'>Status</label>
                 <label id='forçalbl'>Força</label><input autocomplete="off" type="text" class="status-input" name="força" id="força" readonly>
@@ -112,5 +123,7 @@
     </div>
 </body>
 <script src="./jquery-3.6.0.min.js"></script>
-<script src="./scripts/script.js"></script>
+<script src="./scripts/base.js"></script>
+<script src="./scripts/geradorDeNome.js"></script>
+<script src="./scripts/geradorDeStatus.js"></script>
 </html>
