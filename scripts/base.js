@@ -9,6 +9,7 @@ $('#classe').hide()
 $('#eclasse').hide()
 $('#descriçãoRaça').hide()
 $('#descriçãoClasse').hide()
+$('#rpgtitulo').text('Criação de Personagem Pag.1')
 
 
 let seuNome, suaRaça, suaClasse, seuAlinhamento
@@ -526,6 +527,7 @@ function setClasse(){
 
 function proximoCriar(){
 
+   
     seuNome = $('#nome').val()
     força = $('#força').val()
     destreza = $('#destreza').val()
@@ -541,6 +543,8 @@ function proximoCriar(){
     $('#primeiro-formulario').css('display', 'none')
     $('#erro-segundo-formulario').hide()
     $('#imagens').hide()
+    $('#biografia').show()
+    $('#rpgtitulo').text('Criação de Personagem Pag.2')
     } else if(força <= 1 && pv < 2){
         $('#erro-segundo-formulario').show()
         $('#erro-segundo-formulario').text ('Randomize os status!')

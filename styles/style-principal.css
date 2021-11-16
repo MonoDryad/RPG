@@ -42,15 +42,15 @@ display: none;
 
 label#eraça{
   position: absolute;
-  top: 11.5vw;
-  left: 0.5%;
+  top: 11.4vw;
+  left: 0.5vw;
   font: 1vw;
 }
 
 label#nOme{
   position: absolute;
   top: 9.4vw;
-  left: 0.5%;
+  left: 0.5vw;
   font: 1vw;
 }
 
@@ -129,7 +129,6 @@ input[type="radio" i] {
   background-image: url(./imagens/criador_de_personagem.jpg);
   background-size: 100vw;
   padding: 0.5vw;
-  border-radius: 7px;
   border-radius: 1vw;
   font-size: 24px;
   font-size: 1vw;
@@ -154,11 +153,11 @@ input[type="radio" i] {
   background-color: transparent;
   border-style: none;
   font-family: Land;
-  font-size: 24px;
   font-size: 1.7vw;
   position: absolute;
-  top: 11.55vw;
-  left: 5vw;
+  top: 11.3vw;
+  left: 4.7vw;
+  width: 11.5vw;
 }
 
 #primeiro-formulario input#nome{
@@ -166,12 +165,10 @@ input[type="radio" i] {
   background-color: transparent;
   border-style: none;
   font-family: Land;
-  font-size: 24px;
   font-size: 1.7vw;
   position: absolute;
   top: 9.4vw;
-  left: 5vw;
-  outline: 0;
+  left: 4.7vw;
 }
 
 #primeiro-formulario input#nome:hover{
@@ -196,11 +193,11 @@ input[type="radio" i] {
   background-color: transparent;
   border-style: none;
   font-family: Land;
-  font-size: 24px;
   font-size: 1.7vw;
   position: absolute;
   top: 13.4vw;
-  left: 5vw;
+  left: 4.8vw;
+  width: 11.5vw;
 }
 
 
@@ -371,7 +368,7 @@ input[type="radio" i] {
 
 #descriçãoRaça{
   position: absolute;
-  top: 10%;
+  top: 4vw;
   left: 49.5vw;
   right: 0vw;
   bottom: 0vw;
@@ -387,12 +384,11 @@ input[type="radio" i] {
 
 #descriçãoClasse{
   position: absolute;
-  top: 65%;
+  top: 26.8vw;
   left: 49.5vw;
   width: 43.5vw;
-  height: 29%;
+  height: 8.2vw;
   font-family: Land;
-  font-size: 20px;
   font-size: 1.78vw;
   background-color: transparent;
   color: black;
@@ -404,51 +400,39 @@ input[type="radio" i] {
   position: absolute;
   top: 1vw;
   left: 49.8vw;
-  right: 0vw;
-  bottom: 0vw;
-  font-size: 40px;
   font-size: 3.38vw;
   font-weight: bolder;
-  text-decoration: underline;
 }
 
 #tituloClasse{
   position: absolute;
   top: 23.5vw;
   left: 49.8vw;
-  font-size: 40px;
   font-size: 3.38vw;
   font-weight: bolder;
-  text-decoration: underline;
 }
 
 #erro-segundo-formulario{
   position: absolute;
-  top: 39.2vw;
-  left: 20vw;
+  top: 38.2vw;
+  font-size: 3vw;
+  left: 1vw;
   color: red;
 }
 
 #botao-randomizar{
   position: absolute;
-  top: 0.6vw;
-  left: 10vw;
-  font-family: Land;
-  background: transparent;
-  border: 0;
-  width: 13.2vw;
-  font-size: 2.1vw;
+  top: 20vw;
+  left: 51vw;
+  width: 10vw;
   cursor: pointer;
 }
 
 #botao-proximo-formulario{
   position: absolute;
-  top: 22vw;
-  left: 2.5vw;
-  background-color: transparent;
-  border: none;
-  font-family: Land;
-  font-size: 2.5vw;
+  top: 20vw;
+  left: 83vw;
+  width: 10vw;
   cursor: pointer;
 }
 
@@ -460,29 +444,46 @@ input[type="radio" i] {
   display:none;
 }
 
+label#Biografia-text{
+  position: absolute;
+  top: 18vw;
+  left: 32.5vw;
+  font-size: 2.5vw;
+}
+
+img#gerarbiografia{
+  position: absolute;
+  top: 15.8vw;
+  left: 20vw;
+  width: 10vw;
+}
+
 #biografia{
   position: absolute;
-  top: 23%;
-  left: 20%;
+  top: 20vw;
+  left: 20vw;
+  border: black solid 0.1vw;
   background-color: transparent;
   font-family: Land;
   color: black;
-  border: none;
-  font-size: 18px;
-  height: 70%;
+  font-size: 2vw;
+  width: 40vw;
+  height: 20vw;
 }
 
 #PersonagemAleatorio{
   position: absolute;
-  top: 1vw;
-  left: 20vw;
-  font-size: 1vw;
+  top: 36vw;
+  left: 73vw;
   width: 10vw;
+  cursor: pointer;
 }
 
 #NomeAleatorio{
   position: absolute;
-  left: 35%;
-  
+  top: 36vw;
+  left: 62.3vw;
+  width: 10vw;
+  cursor: pointer;
 }
 

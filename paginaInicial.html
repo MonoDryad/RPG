@@ -8,7 +8,7 @@
     <!-- <link rel="stylesheet" href="./styles/style-1080p.css">
     <link rel="stylesheet" href="./styles/style-900p.css"> -->
     <link rel="icon" href="./styles/imagens/Logo.png" type="image/png">
-    <title>RPG</title>
+    <title id="rpgtitulo">RPG</title>
 </head>
 <body>
     <header>
@@ -30,8 +30,8 @@
             <div class="informação">
                 <label id="nOme">Nome </label>
                 <input autocomplete="off" type="text" class="nome" id="nome" name="nome">
-                <button id="NomeAleatorio" onclick="geraraAleatorio()">Gerar Nome</button>
-                <button id="PersonagemAleatorio" onclick="gerarPersonagem()">Gerar Personagem</button>
+                <img src="./styles/imagens/botoes/gerarNomeOn.png" alt="Gerar Nome" id="NomeAleatorio" onclick="geraraAleatorio()">
+                <img src="./styles/imagens/botoes/gerarPersonagemOn.png" alt="Gerar Personagem" id="PersonagemAleatorio" onclick="gerarPersonagem()">
             </div>
                 <label id="eraça">Raça </label>
                 <label id="tituloRaça">Raça</label>
@@ -61,7 +61,6 @@
                 <option value="mago" id="mago">Mago</option>
                 <option value="ladino" id="ladino">Ladino</option>
             </select>
-            <textarea id="biografia" placeholder="Sua Biografia! (Opcional)"></textarea>
             <div class="status-personagem" id="status-personagem">
                 <label id='Status'>Status</label>
                 <label id='forçalbl'>Força</label><input autocomplete="off" type="text" class="status-input" name="força" id="força" readonly>
@@ -72,12 +71,15 @@
                 <label id='carismalbl'>Carisma </label><input autocomplete="off" type="text" class="status-input" name="carisma" id="carisma" readonly>
                 <label id='ptotallbl'>Total </label><input autocomplete="off" type="text" class="status-input" name="pontos" id="pontos" readonly>
                 <label id='pvlbl'>PV </label><input autocomplete="off" type="text" class="status-input" name="ponto-de-vida" id="ponto-de-vida" readonly>
-                <button id="botao-randomizar" onclick="randomizarStatusPrimeiro()">Gerar Status</button>
+                <img src="./styles/imagens/botoes/statusOn.png" id="botao-randomizar" alt="Gerar Status" onclick="randomizarStatusPrimeiro()">
                 <label id="erro-primeiro-formulario"></label>
-                <button id="botao-proximo-formulario" onclick="proximoCriar()">Próximo</button>
+                <img src="./styles/imagens/botoes/proximoOn.png" id="botao-proximo-formulario" onclick="proximoCriar()" alt="Próximo">>
             </div>
         </div>
         <div id="segundo-formulario" class="segundo-formularo" style="display: none;">
+            <label id="Biografia-text">Biografia</label>
+            <img src="./styles/imagens/botoes/proximoOn.png" id="gerarbiografia" alt="Gerar Biografia (Genérico)" onclick="gerarBiografia()">
+            <textarea autocomplete="off" id="biografia" placeholder="Sua Biografia! (Opcional)"></textarea>
             <label>Iniciativa: </label><input autocomplete="off" type="number" name="iniciativa" id="iniciativa" readonly>
             <label>Velocidade: </label><input autocomplete="off" type="number" name="velocidade" id="velocidade" readonly>
             <button id="randomizar2" onclick="randomizarStatusSegundo()">Gerar Status</button>
