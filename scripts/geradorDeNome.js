@@ -63,7 +63,7 @@ function gerarBiografia(){
     let viveuCom 
     let oQueAconteceuParaFicarSem
     let ficouTraumatizado
-    tragedia = Math.floor(Math.random() * 10)
+    let tragedia = Math.floor(Math.random() * 10)
     if(comQuemCresceu == 2 && tragedia < 4 ){
         oQueAconteceuParaFicarSem = 'a sua mãe morreu com o seu nascimento'
     } else if(comQuemCresceu == 2 && tragedia > 4){
@@ -79,8 +79,11 @@ function gerarBiografia(){
     } else if(comQuemCresceu == 3 && tragedia > 7){
         oQueAconteceuParaFicarSem = 'o seu pai foi brutalmente assassinado na sua frente'
         ficouTraumatizado = true
+    } else if(comQuemCresceu == 0 || comQuemCresceu == 4 && tragedia < 3){
+        oQueAconteceuParaFicarSem = 'após o seu nascimento'
+    } else if(comQuemCresceu == 0 || comQuemCresceu == 4 && tragedia > 3){
+        oQueAconteceuParaFicarSem = 'depois de ter seus pais assassinados'
     }
-
     switch(comQuemCresceu){
         case 1:
             viveuCom = 'com o seu pai e sua mãe'
@@ -116,10 +119,11 @@ function gerarBiografia(){
     if(suaRaça == 'Humano'){
         $('#biografia').val(`${seuNome} nasceu na vila ${vilaEscolhida},`)
         if(viveuCom == 'orfão'){
-        $('#biografia').val($('#biografia').val() + ` onde passou a infância e adolescência como um ${viveuCom}`)
+        $('#biografia').val($('#biografia').val() + ` onde passou a infância e adolescência como um ${viveuCom}, foi abandonado ${oQueAconteceuParaFicarSem}`)
         } else{
             $('#biografia').val($('#biografia').val() + ` onde viveu ${viveuCom}`)
         }
+
     }else{
         $('#biografia').val(`Você é da vila ${vilaEscolhida}`)
     }
