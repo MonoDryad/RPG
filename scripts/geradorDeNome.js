@@ -121,7 +121,7 @@ function gerarBiografia(){
         if(viveuCom == 'orfão'){
         $('#biografia').val($('#biografia').val() + ` onde passou a infância e adolescência como um ${viveuCom}, foi abandonado ${oQueAconteceuParaFicarSem}`)
         } else{
-            $('#biografia').val($('#biografia').val() + ` onde viveu ${viveuCom}`)
+            $('#biografia').val($('#biografia').val() + ` onde viveu ${viveuCom}, `)
         }
 
     }else{
