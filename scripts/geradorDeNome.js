@@ -32,7 +32,6 @@ if(suaRaça == 'Gnomo' && suaClasse == 'Monge' || suaRaça == 'Gnomo' && suaClas
     return(gerarPersonagem())
 } else if(suaRaça == 'Meio-Orc'){
     if(suaClasse == 'Guerreiro' || suaClasse == 'Monge' || suaClasse == "Paladino" || suaClasse == "Caçador" || suaClasse == "Sacerdote"){
-        console.log('tudo certo')
         randomizarStatusPrimeiro()
         geraraAleatorio()
         gerarBiografia()
@@ -40,7 +39,6 @@ if(suaRaça == 'Gnomo' && suaClasse == 'Monge' || suaRaça == 'Gnomo' && suaClas
         return(gerarPersonagem())
     }
 } else{
-    console.log('tudo certo 2')
     randomizarStatusPrimeiro()
     geraraAleatorio()
     gerarBiografia()
@@ -49,12 +47,11 @@ if(suaRaça == 'Gnomo' && suaClasse == 'Monge' || suaRaça == 'Gnomo' && suaClas
 
 function gerarBiografia()
 {
-    let aleatorizacaoDaVila =
-    {
-        vilasDisponiveis: ['Stonedale','Baregrave','Knighthall','Autumnpass','Midmeadow','Mossmoor','Lostguard','Mudhold','Madstrand','Quickrock','Sauroux','Soilès','Perpizieu','Gresart','Grevin','Gennenin','Maiciennes','Roalès','Perpilles','Angoumans','Gasca','Vitorín','Paría','Oviestile','Granarcia','Cantasca','Mativa','Canca','Tarrasca',"Choyonne",'Champinin'],
-        escolherVila: Math.floor(Math.random() * vilasDisponiveis.length),
-        vilaEscolhida: vilasDisponiveis[escolherVila]
-    }
+
+        vilasDisponiveis = ['Stonedale','Baregrave','Knighthall','Autumnpass','Midmeadow','Mossmoor','Lostguard','Mudhold','Madstrand','Quickrock','Sauroux','Soilès','Perpizieu','Gresart','Grevin','Gennenin','Maiciennes','Roalès','Perpilles','Angoumans','Gasca','Vitorín','Paría','Oviestile','Granarcia','Cantasca','Mativa','Canca','Tarrasca',"Choyonne",'Champinin']
+        escolherVila = Math.floor(Math.random() * vilasDisponiveis.length)
+        vilaEscolhida = vilasDisponiveis[escolherVila]
+
     // infancia e adolecencia
     let familiaDoPersonagem = 
     {
@@ -63,11 +60,11 @@ function gerarBiografia()
     }
     let nomesParentes = 
     {
-        mae: ['1'],
-        pai: ['2'],
-        irma: ['3'],
-        irmao: ['4'],
-        melhorAmigo: ['5']
+        mae: ['Gillia','Thyxia','Fayeth','Irhaal','Snasdrida','Urchin','Lilla','Alexa'],
+        pai: ['Edyrm','Eldrin','Raeran','Fylson','Maddarlun','Gogren','Wesgroli','Drurshen'],
+        irma: ['Lilli','Topaz','Asari','Alice','Akayle','Syndra','Keya','Fayeth'],
+        irmao: ['Aimon','Ranber','Luthais','Thossouc','Bugrel','Firmotir','Hulas','Mobet'],
+        melhorAmigo: ['Hestrarlun','Rulf','Tommie','Remi','Aalart','Rainerus','Otelin','Gefroy']
     }
     let personalidade =
     {
@@ -86,7 +83,6 @@ function gerarBiografia()
     {   
         seRelacionou: false,
         quantasVezes: Math.floor(Math.random() * 6 - 1),
-        coracaoPartido: Math.floor(Math.random() * quantasVezes)
     }
     let tragedia =
     {
@@ -100,5 +96,17 @@ function gerarBiografia()
         estudouOQue: ['medicina','a arte da guerra','politica'],
         concluiu: true,
     }
+
+    let aleatorizacao = 
+    {
+        escolherParentes: Math.floor(Math.random() * 2),
+        parentesEscolhidos: familiaDoPersonagem.parentes[escolherParentes]
+    }
+
+    console.log(aleatorizacao.parentesEscolhidos)
+    // Texto que vai aparecer na tela
+    // $('#Biografia-text').text(`${seuNome} nasceu na vila ${aleatorizacaoDaVila.vilaEscolhida}, ${aleatorizacao.parentesEscolhidos}`)
+
 }
+
 
