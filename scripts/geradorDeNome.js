@@ -6,6 +6,7 @@ let numAleatorio = Math.floor(Math.random() * nomesDisponiveis.length)
 console.log(nomesDisponiveis[numAleatorio], numAleatorio)
 
 $('#nome').val(nomesDisponiveis[numAleatorio])
+seuNome = nomesDisponiveis[numAleatorio]
 }
 
 // Gerador de Personagem
@@ -97,15 +98,10 @@ function gerarBiografia()
         concluiu: true,
     }
 
-    let aleatorizacao = 
-    {
-        escolherParentes: Math.floor(Math.random() * 2),
-        parentesEscolhidos: familiaDoPersonagem.parentes[escolherParentes]
-    }
 
-    console.log(aleatorizacao.parentesEscolhidos)
+
     // Texto que vai aparecer na tela
-    // $('#Biografia-text').text(`${seuNome} nasceu na vila ${aleatorizacaoDaVila.vilaEscolhida}, ${aleatorizacao.parentesEscolhidos}`)
+    $('#biografia').text(`${seuNome} nasceu na vila ${vilaEscolhida}, morou com ${familiaDoPersonagem.parentes[Math.floor(Math.random() * familiaDoPersonagem.parentes.length)]} até ter 15 anos, quando criança, sempre brincava ${familiaDoPersonagem.brincavaCom[Math.floor(Math.random() * familiaDoPersonagem.brincavaCom.length)]}`)
 
 }
 
