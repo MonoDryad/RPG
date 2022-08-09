@@ -73,8 +73,8 @@ function gerarBiografia()
         refeicaoFavorita: ['Peixe grelhado','Feijão grosso','Caramujo Estrela','Pimentão da lama','Salada do Outono','Waimon frito','Waimon cozido','Ondou assado','Ondou cozido','não tinha'],
         animalFavorito: ['gato','cachorro','gineo','bilbo','não tinha'],
         maiorMedoInfancia: ['altura','bandido','fogo','aranha','monstros','escuro','não tinha'],
-        brincadeiraFavorita: ['esconde-esconde','familia-real','pega-pega','não tinha'],
-        quandoCrescer: ['um cavaleiro nobre','um cientista renomado','um imperador','um heroi',',']
+        brincadeiraFavorita: ['esconde-esconde','familia-real','pega-pega','não tinha', 'com seu pai'],
+        quandoCrescer: ['um cavaleiro nobre','um cientista renomado','um imperador','um heroi','um caçador', 'um comerciante renomado']
     }
     let condicao =
     {
@@ -89,7 +89,7 @@ function gerarBiografia()
     {
         aTragediaVaiAcontecer: Math.floor(Math.random() * 40),
         aconteceuAlgumaTragedia: false,
-        oQueAconteceu: ['a vila foi assaultada','o pai foi assassinado','a peste atingiu sua vila']
+        oQueAconteceu: ['a vila foi assaltada','o pai foi assassinado','a peste atingiu sua vila', 'uma inundação']
     }
     let aprendizado = 
     {
@@ -101,7 +101,11 @@ function gerarBiografia()
 
 
     // Texto que vai aparecer na tela
-    $('#biografia').text(`${seuNome} nasceu na vila ${vilaEscolhida}, morou com ${familiaDoPersonagem.parentes[Math.floor(Math.random() * familiaDoPersonagem.parentes.length)]} até ter 15 anos, quando criança, sempre brincava ${familiaDoPersonagem.brincavaCom[Math.floor(Math.random() * familiaDoPersonagem.brincavaCom.length)]}`)
+    $('#biografia').text(`${seuNome} nasceu na vila ${vilaEscolhida}, 
+morou com ${familiaDoPersonagem.parentes[Math.floor(Math.random() * familiaDoPersonagem.parentes.length)]} até ter 15 anos, 
+quando criança, sempre brincava ${familiaDoPersonagem.brincavaCom[Math.floor(Math.random() * familiaDoPersonagem.brincavaCom.length)]}, 
+apesar da condição financeira ${condicao.financeiro[Math.floor(Math.random() * condicao.financeiro.length)]} de sua familia, 
+a vila em que você morava se encontrava em um estado financeiro ${condicao.financeiro[Math.floor(Math.random() * condicao.financeiro.length)]}`)
 
 }
 
